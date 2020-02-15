@@ -32,6 +32,8 @@ collections:
     permalink: /doc/:path/
   hcl:
     output: false
+  qubes-translated:
+    output: true
 
 allowed_categories:
   - press
