@@ -1,12 +1,15 @@
 [submodule "attachment"]
 	path = attachment
-	url = https://github.com/QubesOS/qubes-attachment
+	url = https://github.com/dysfuncia/qubes-attachment
 [submodule "_posts"]
 	path = _posts
-	url = https://github.com/QubesOS/qubes-posts
+	url = https://github.com/dysfuncia/qubes-posts
 [submodule "_doc"]
 	path = _doc
-	url = https://github.com/QubesOS/qubes-doc
+	url = https://github.com/dysfuncia/qubes-doc
 [submodule "_hcl"]
 	path = _hcl
-	url = https://github.com/QubesOS/qubes-hcl
+	url = https://github.com/dysfuncia/qubes-hcl
+[submodule "_qubes-translated"]
+	path = _qubes-translated
+	url = https://github.com/dysfuncia/qubes-translated-cloned
