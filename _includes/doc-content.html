@@ -1,4 +1,9 @@
 <div class="more-bottom white-box page-content">
+   {% if page.lang contains "en" %}
+   	{% assign lang = "" %}
+   {% else %}
+   	{% assign lang = "/" | append: page.lang %}
+   {% endif %}
   <div class="row">
     <div class="col-lg-3 col-md-3 text-center">
       <div class="page-source-side remove-bottom">
@@ -7,12 +12,12 @@
       <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">Contents</a>
       <div id="page-toc" class="collapse in"></div>
       <div class="page-source-side">
-        <a href="/doc/"
+        <a href="{{ lang }}/doc/"
            class="btn btn-primary btn-block"
            title="Go to Documentation">
           <span class="fa fa-fw fa-book"></span> Documentation
         </a><br>
-        <a href="/doc/doc-guidelines/"
+        <a href="{{ lang }}/doc/doc-guidelines/"
            class="page-source-link btn btn-default btn-block"
            title="Improve the Docs"
            target="_blank">
@@ -30,19 +35,19 @@
            target="_blank">
           <span class="fa fa-fw fa-code-fork"></span> Edit This Page
         </a><br>
-        <a href="/doc/reporting-bugs/"
+        <a href="{{ lang }}/doc/reporting-bugs/"
            class="page-source-link btn btn-default btn-block"
            title="Report a Bug"
            target="_blank">
           <span class="fa fa-fw fa-bug"></span> Report a Bug
         </a><br>
-        <a href="/support/"
+        <a href="{{ lang }}/support/"
            class="page-source-link btn btn-default btn-block"
            title="Help & Support"
            target="_blank">
           <span class="fa fa-fw fa-life-ring"></span> Help & Support
         </a><br>
-        <a href="/donate/"
+        <a href="{{ lang }}/donate/"
            class="page-source-link btn btn-default btn-block"
            title="Make a Donation"
            target="_blank">
@@ -59,12 +64,12 @@
     </div>
   </div>
   <div class="page-source-bottom">
-        <a href="/doc/"
+        <a href="{{ lang }}/doc/"
            class="btn btn-primary btn-block"
            title="Go to Documentation">
           <span class="fa fa-fw fa-book"></span> Documentation
         </a><br>
-        <a href="/doc/doc-guidelines/"
+        <a href="{{ lang }}/doc/doc-guidelines/"
            class="page-source-link btn btn-default btn-block"
            title="Improve the Docs"
            target="_blank">
@@ -82,19 +87,19 @@
            target="_blank">
           <span class="fa fa-fw fa-code-fork"></span> Edit This Page
         </a><br>
-        <a href="/doc/reporting-bugs/"
+        <a href="{{ lang }}/doc/reporting-bugs/"
            class="page-source-link btn btn-default btn-block"
            title="Report a Bug"
            target="_blank">
           <span class="fa fa-fw fa-bug"></span> Report a Bug
         </a><br>
-        <a href="/support/"
+        <a href="{{ lang }}/support/"
            class="page-source-link btn btn-default btn-block"
            title="Help & Support"
            target="_blank">
           <span class="fa fa-fw fa-life-ring"></span> Help & Support
         </a><br>
-        <a href="/donate/"
+        <a href="{{ lang }}/donate/"
            class="page-source-link btn btn-default btn-block"
            title="Make a Donation"
            target="_blank">

@@ -1,11 +1,15 @@
 {% assign doc_segments = page.relative_path | split: '/' %}
-{% for section in site.data.doc %}
+{% assign docs = site.data.doc | where: 'lang', page.lang %}
+  {% if page.lang contains "en" %}
+  	{% assign lang = "" %}
+  {% else %}
+  	{% assign lang = "/" | append: page.lang %}
+  {% endif %}
+{% for section in docs %}
   {% if doc_segments contains section.folder %}
     <h1 class="more-top add-left outer-heading">
-      <a href="/doc/#{{ section.category | slugify }}" class="heading-link">
-        <i class="fa fa-book"></i>
-          {{ section.category }}
-      </a>
+	    <a href="{{ lang }}/doc/#{{ section.category | slugify }}" class="heading-link">
+      <i class="fa fa-book"></i> {{ section.category }}</a>
     </h1>
     {% if section.category == "External Documentation" %}
       {% include doc-external-warning.html %}
@@ -15,3 +19,12 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+{% unless doc_heading %}
+  <h1 class="more-top add-left outer-heading">
+	  <a href="{{ lang }}/doc/" class="heading-link">
+    <i class="fa fa-book"></i> Documentation</a>
+  </h1>
+{% endunless %}
+
+
+

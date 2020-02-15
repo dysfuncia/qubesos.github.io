@@ -18,7 +18,11 @@
   </div>
   </div>
   <div class="row footer-nav">
-    {% for section in site.data.architecture %}
+    	{% assign archies = site.data.architecture | where: 'lang', page.lang %}
+	{% if page.layout contains "post" %}
+		{% assign archies = site.data.architecture | where: 'lang', "en" %}
+	{% endif %}
+    {% for section in archies %}
     <div class="col-lg-2 col-md-2">
       <a href="{{section.url}}"><h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5></a>
       <ul class="list-unstyled">
@@ -30,6 +34,11 @@
     {% endfor %}
   </div>
   <div class="row footer-nav text-center more-top add-bottom">
+	{% if page.lang contains "en" %}
+        {% assign lang = "" %}
+      {% else %}
+        {% assign lang = "/" | append: page.lang %}
+      {% endif %}
     <div class="footer-logo more-bottom">
       <a href="/"><img src="/attachment/icons/logo-outline-small.svg" alt="Qubes"><strong>Qubes</strong> OS</a>
     </div>
@@ -39,9 +48,9 @@
              </script><noscript>2020</noscript> The Qubes OS Project and others<br>
       <a href="https://github.com/QubesOS/qubesos.github.io">Website Source Code</a> |
       <a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion">Tor Onion Service</a> |
-      <a href="/doc/reporting-bugs/">Report a Problem</a> |
-      <a href="/privacy/">Privacy Policy</a> |
-      <a href="/terms/">Terms of Use</a> |
+      <a href="{{ lang }}/doc/reporting-bugs/">Report a Problem</a> |
+      <a href="{{ lang }}/privacy/">Privacy Policy</a> |
+      <a href="{{ lang }}/terms/">Terms of Use</a> |
       <a href="/sitemap.xml">Sitemap</a>
     </p>
   </div>

@@ -1,5 +1,10 @@
 <p id="{{team.name | slugify}}">
-  <a href="/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
+  {% if page.lang contains "en" %}
+        {% assign lang = "" %}
+  {% else %}
+        {% assign lang = "/" | append: page.lang %}
+  {% endif %}
+  <a href="{{ lang }}/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
   <em>{{team.role}}</em><br>
   {% if team.email %}
   <a href="mailto:{{team.email}}"><i class="fa fa-envelope"></i> Email</a>

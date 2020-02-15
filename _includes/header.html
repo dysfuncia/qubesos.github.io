@@ -15,9 +15,24 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-        {% for section in site.data.architecture %}
-        <li><a href="{{ section.url }}">{{ section.title }}</a></li>
-        {% endfor %}
+	       {% if page.layout==nil or page.collection == 'posts' %}
+          <!-- no translation for news -->
+          {% assign archies = site.data.architecture | where: 'lang', "en" %}
+          {% for section in archies %}
+            <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          {% endfor %}
+        {% else %}
+
+          {% assign archies = site.data.architecture | where: 'lang', page.lang %}
+          {% for section in archies %}
+                <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          {% endfor %}
+          {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
+         <!--    size: {{posts.size}}, ref: {{page.ref}} -->
+          {% for post in posts %}
+                 <li><a class="c1" href="{{post.url}}">{{post.lang}}</a></li>
+          {% endfor %}
+        {% endif %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>
