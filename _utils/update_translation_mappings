@@ -1,0 +1,4 @@
+tx config mapping-bulk -p qubes --source-language en --type GITHUBMARKDOWN -f '.md' -d --source-file-dir _doc -i _dev --expression '_qubes-translated/<lang>/doc/{filepath}/{filename}{extension}' --execute
+tx config mapping-bulk -p qubes --source-language en --type GITHUBMARKDOWN -f '.md' -d --source-file-dir pages --expression '_qubes-translated/<lang>/pages/{filepath}/{filename}{extension}' --execute
+crudini --del .tx/config qubes._doc_README
+crudini --del .tx/config qubes._doc_CONTRIBUTING
