@@ -29,9 +29,16 @@
           {% endfor %}
           {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
          <!--    size: {{posts.size}}, ref: {{page.ref}} -->
-          {% for post in posts %}
-                 <li><a class="c1" href="{{post.url}}">{{post.lang}}</a></li>
-          {% endfor %}
+	  <li>
+           <div class="langdropdown">
+             <span>{{ page.lang }}</span>
+             <div class="langdropdown-items">
+               {% for post in posts %}
+                 <p><a class="c1" href="{{post.url}}">{{post.lang}}</a></p>
+               {% endfor %}
+             </div>
+           </div>
+         </li>
         {% endif %}
       </ul>
     </div><!--/.nav-collapse -->
