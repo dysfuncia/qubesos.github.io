@@ -4,6 +4,11 @@
     <body>
       {% include header.html %}
       <div class="container">
+	{% if page.lang contains "en" %}
+          {% assign lang = "" %}
+        {% else %}
+          {% assign lang = "/" | append: page.lang %}
+        {% endif %}  
         <div class="row more-top more-bottom">
           <div class="col-lg-4 col-md-3">
             <h1 class="add-left outer-heading">
@@ -13,18 +18,18 @@
           </div>
           <div class="col-lg-3 col-md-3 add-left">
             <ul class="list-unstyled">
-              <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
-              <li><a href="/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
-              <li><a href="/support/"><i class="fa fa-life-ring fa-fw black-icon"></i> Get help and support</a></li>
-              <li><a href="/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
+              <li><a href="{{ lang }}/security/"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
+              <li><a href="{{ lang }}/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
+              <li><a href="{{ lang }}/support/"><i class="fa fa-life-ring fa-fw black-icon"></i> Get help and support</a></li>
+              <li><a href="{{ lang }}/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-5 add-left">
             <ul class="list-unstyled">
               <li><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries: <a href="mailto:press@qubes-os.org">press@qubes-os.org</a></li>
               <li><i class="fa fa-briefcase fa-fw"></i> Business inquiries: <a href="mailto:business@qubes-os.org">business@qubes-os.org</a></li>
-              <li><a href="/partners/"><i class="fa fa-globe fa-fw black-icon"></i> Become a Qubes Partner</a></li>
-              <li><a href="/hardware-certification/"><i class="fa fa-laptop fa-fw black-icon"></i> Request hardware certification</a></li>
+              <li><a href="{{ lang }}/partners/"><i class="fa fa-globe fa-fw black-icon"></i> Become a Qubes Partner</a></li>
+              <li><a href="{{ lang }}/hardware-certification/"><i class="fa fa-laptop fa-fw black-icon"></i> Request hardware certification</a></li>
             </ul>
           </div>
         </div>

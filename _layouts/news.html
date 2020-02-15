@@ -4,13 +4,18 @@
     <body>
       {% include header.html %}
       <div class="container">
+	{% if page.lang == "en" %}
+          {% assign lang = "" %}
+        {% else %}
+          {% assign lang = "/" | append: page.lang %}
+        {% endif %}
         <div class="row more-top">
           <div class="col-lg-7 col-md-7">
             <h1 class="add-left outer-heading">
-              <a href="/news/" class="heading-link">
+		    <a href="{{ lang }}/news/" class="heading-link">
                 <i class="fa fa-newspaper-o"></i> News
               </a>
-              <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
+	      <a href="{{ lang }}/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
             </h1>
           </div>
           <div class="col-lg-5 col-md-5 button-heading">
