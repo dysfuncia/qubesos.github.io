@@ -5,7 +5,7 @@
       {% include header.html %}
       <div class="container">
         <h1 class="more-top add-left outer-heading">
-	 {% assign archies = site.data.architecture | where: 'lang', page.lang %}
+	 {% assign archies = site.data.translated[page.lang].architecture %}
         {% for section in archies %} 
           {% if section.url == page.permalink %}
           <i class="fa {{section.icon}}"></i>

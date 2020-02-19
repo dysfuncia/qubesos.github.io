@@ -1,10 +1,11 @@
 {% assign doc_segments = page.relative_path | split: '/' %}
-{% assign docs = site.data.doc | where: 'lang', page.lang %}
+{% assign docs = site.data.translated[page.lang].doc %}
   {% if page.lang contains "en" %}
   	{% assign lang = "" %}
   {% else %}
   	{% assign lang = "/" | append: page.lang %}
   {% endif %}
+
 {% for section in docs %}
   {% if doc_segments contains section.folder %}
     <h1 class="more-top add-left outer-heading">

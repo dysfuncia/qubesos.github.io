@@ -8,7 +8,8 @@
         {% if page.icon %}
         <i class="fa {{page.icon}}"></i>
         {% else %}
-          {% for section in site.data.architecture %}
+	{% assign archies = site.data.translated[page.lang].architecture %}
+          {% for section in archies %}
             {% if section.url == page.permalink %}
             <i class="fa {{section.icon}}"></i>
             {% else %}

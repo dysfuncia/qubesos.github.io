@@ -15,19 +15,22 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-	       {% if page.layout==nil or page.collection == 'posts' %}
-          <!-- no translation for news -->
-          {% assign archies = site.data.architecture | where: 'lang', "en" %}
-          {% for section in archies %}
-            <li><a href="{{ section.url }}">{{ section.title }}</a></li>
-          {% endfor %}
-        {% else %}
 
-          {% assign archies = site.data.architecture | where: 'lang', page.lang %}
-          {% for section in archies %}
-                <li><a href="{{ section.url }}">{{ section.title }}</a></li>
-          {% endfor %}
-          {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
+
+	  {% if page.layout==nil or page.collection == 'posts' %}
+          <!-- no translation for news -->
+	  	{% assign l = "en" %}
+          	{% assign archies = site.data.translated[l].architecture %}
+          	{% for section in archies %}
+            		<li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          	{% endfor %}
+         {% else %}
+	<!--{% assign archies = site.data.architecture | where: 'lang', page.lang %}-->
+         	{% assign archies = site.data.translated[page.lang].architecture %}
+          	{% for section in archies %}
+                	<li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          	{% endfor %}
+          	{% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
          <!--    size: {{posts.size}}, ref: {{page.ref}} -->
 	  <li>
            <div class="langdropdown">

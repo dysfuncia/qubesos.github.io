@@ -18,9 +18,9 @@
   </div>
   </div>
   <div class="row footer-nav">
-    	{% assign archies = site.data.architecture | where: 'lang', page.lang %}
+	{% assign archies = site.data.translated[page.lang].architecture %}
 	{% if page.layout contains "post" %}
-		{% assign archies = site.data.architecture | where: 'lang', "en" %}
+		{% assign archies = site.data.translated["en"].architecture %}
 	{% endif %}
     {% for section in archies %}
     <div class="col-lg-2 col-md-2">
