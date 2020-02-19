@@ -43,6 +43,8 @@ def main(rootDir, lang, counter):
             filepath=dirName+"/"+fileName
             with io.open(filepath) as fp:
                 md = frontmatter.load(fp)
+                if not md.metadata:
+                    continue
                 if md.get('lang') == None:
                     md['lang'] = "en"
 
@@ -52,6 +54,7 @@ def main(rootDir, lang, counter):
 
             with io.open(filepath, 'wb') as replaced:
                 frontmatter.dump(md,replaced)
+                replaced.write(b'\n')
 
     return counter
 
