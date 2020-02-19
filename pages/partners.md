@@ -1,10 +1,12 @@
 ---
+lang: en
 layout: default
-title: Qubes Partners
 permalink: /partners/
 redirect_from:
- - /en/partners/
- - /funding/
+- /en/partners/
+- /funding/
+ref: 214
+title: Qubes Partners
 ---
 
 Our Partners
@@ -171,4 +173,3 @@ We are grateful for their support!
     </tr>
   </tbody>
 </table>
-

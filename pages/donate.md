@@ -1,11 +1,13 @@
 ---
+lang: en
 layout: default
-title: Donate to Qubes
 permalink: /donate/
 redirect_from:
 - /en/donate/
 - /doc/Donations/
 - /wiki/Donations/
+ref: 212
+title: Donate to Qubes
 ---
 
 # Donate to Qubes – Your Support Counts!

@@ -1,11 +1,13 @@
 ---
+lang: en
 layout: default
-title: Terms of Use
 permalink: /terms/
 redirect_from:
 - /en/terms/
 - /doc/terms/
 - /wiki/terms/
+ref: 207
+title: Terms of Use
 ---
 
 Terms of Use
@@ -118,4 +120,3 @@ at any time without notice. By accessing or using the Services or the Content
 after such a revision or replacement of the Terms has occurred, you agree to be
 bound by the revised, then-current Terms. If you do not agree to the new Terms,
 you are prohibited from using the Services and the Content.
-

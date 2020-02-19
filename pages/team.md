@@ -1,11 +1,13 @@
 ---
+lang: en
 layout: team
-title: Team
 permalink: /team/
 redirect_from:
 - /people/
 - /doc/QubesDevelopers/
 - /wiki/QubesDevelopers/
+ref: 209
+title: Team
 ---
 
 <div id="team-core" class="white-box page-content more-bottom">
@@ -109,4 +111,3 @@ redirect_from:
     {% endif %}
   {% endfor %}
 </div>
-

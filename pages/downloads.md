@@ -1,10 +1,12 @@
 ---
+lang: en
 layout: boxless
-title: Download Qubes OS
 permalink: /downloads/
 redirect_from:
 - /doc/QubesDownloads/
 - /wiki/QubesDownloads/
+ref: 208
+title: Download Qubes OS
 ---
 
 <div class="white-box more-bottom page-content">
