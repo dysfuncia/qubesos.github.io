@@ -34,7 +34,7 @@
     {% endfor %}
   </div>
   <div class="row footer-nav text-center more-top add-bottom">
-	{% if page.lang contains "en" %}
+	{% if page.lang==nil or page.lang contains "en" %}
         {% assign lang = "" %}
       {% else %}
         {% assign lang = "/" | append: page.lang %}
