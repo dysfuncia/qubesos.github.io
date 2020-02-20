@@ -35,6 +35,11 @@ collections:
   qubes-translated:
     output: true
 
+exclude:
+  - attachment/wiki/qrexec3/README.md 
+  - README.md
+
+
 allowed_categories:
   - press
   - announcements
