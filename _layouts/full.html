@@ -6,7 +6,11 @@
     <div class="container-fluid">
       <h1 class="more-top add-left outer-heading">
         {% assign page_icon = "fa-page" %}
-	{% assign archies = site.data.translated[page.lang].architecture %}
+	{% if page.lang==nil or page.lang == "en" %}
+			{% assign archies = site.data.architecture %}
+		{% else %}
+			{% assign archies = site.data.translation[page.lang].architecture %}
+		{% endif %}
         {% for section in archies %}{% if section.url == page.permalink %}
           {% assign page_icon = section.icon %}
           {% else %}

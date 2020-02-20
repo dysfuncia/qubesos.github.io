@@ -17,16 +17,8 @@
             </h1>
           </div>
           <div class="col-lg-5 col-md-4 col-sm-3 col-xs-3 text-right">
-            <a title="Video Tours" href="{% if page.lang contains "en" %}
-                {% assign lang = "" %}
-        {% else %}
-                {% assign lang = "/" | append: page.lang %}
-        {% endif %}/video-tours/" class="btn btn-primary"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i>Video Tours</a>
-            <a title="Screenshots" href="{% if page.lang contains "en" %}
-                {% assign lang = "" %}
-        {% else %}
-                {% assign lang = "/" | append: page.lang %}
-        {% endif %}/screenshots/" class="btn btn-primary"><i class="fa fa-photo fa-fw" aria-hidden="true"></i>Screenshots</a>
+		  <a title="Video Tours" href="{{ lang }}/video-tours/" class="btn btn-primary"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i>Video Tours</a>
+		  <a title="Screenshots" href="{{ lang }}/screenshots/" class="btn btn-primary"><i class="fa fa-photo fa-fw" aria-hidden="true"></i>Screenshots</a>
           </div>
         </div>
         <div class="white-box more-bottom page-content">

@@ -1,6 +1,7 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-custom navbar-static-top">
   <div class="container">
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -8,33 +9,44 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="page-link" href="/">
+      {% if page.lang ==nil or page.lang contains "en"%}
+      	{% assign lang = "" %}
+      {% else %}
+      	{% assign lang = page.lang %}
+      {% endif %}
+      <a class="page-link" href="/{{lang}}">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-
-
 	  {% if page.layout==nil or page.collection == 'posts' %}
           <!-- no translation for news -->
-	  	{% assign l = "en" %}
-          	{% assign archies = site.data.translated[l].architecture %}
+	  	{% assign lang = "en" %}
+          	{% assign archies = site.data.architecture %}
           	{% for section in archies %}
             		<li><a href="{{ section.url }}">{{ section.title }}</a></li>
           	{% endfor %}
          {% else %}
-	<!--{% assign archies = site.data.architecture | where: 'lang', page.lang %}-->
-         	{% assign archies = site.data.translated[page.lang].architecture %}
+         	{% if page.lang == nil or page.lang=="en" %}
+			{% assign archies = site.data.architecture %}
+		{% else %}
+			{% assign archies = site.data.translation[page.lang].architecture %}
+		{% endif %}
           	{% for section in archies %}
                 	<li><a href="{{ section.url }}">{{ section.title }}</a></li>
           	{% endfor %}
           	{% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
-         <!--    size: {{posts.size}}, ref: {{page.ref}} -->
+         <!--   TODO  DELETE  size: {{posts.size}}, ref: {{page.ref}} -->
+
+<!-- ...................... {{ site.qubes-translated.news}} -->
+{% assign p = site.qubes-translated|sort:'lang' %}
+
+
 	  <li>
            <div class="langdropdown">
-             <span>{{ page.lang }}</span>
+             <span><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></span>
              <div class="langdropdown-items">
                {% for post in posts %}
                  <p><a class="c1" href="{{post.url}}">{{post.lang}}</a></p>
