@@ -172,6 +172,7 @@ article tr.center {
     position: relative;
     display: inline-block;
 }
+
 .langdropdown-items {
     display: none;
     position: absolute;
@@ -185,6 +186,14 @@ article tr.center {
 }
 .langdropdown:hover .langdropdown-items {
     display: block;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .langdropdown-items {
+    display: block;
+    position: static;
+  }
 }
 
 
