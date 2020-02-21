@@ -37,7 +37,6 @@ collections:
 
 exclude:
   - attachment/wiki/qrexec3/README.md 
-  - README.md
 
 
 allowed_categories:
