@@ -14,6 +14,8 @@
   </title>
   {% if page.translated %}
    	{% include doc-translated-warning.html %}
+  {% else %}
+   	{% include doc-untranslated-info.html %}
    {% endif %}
   {% if page.layout == 'doc' or
         page.layout == 'post' or
