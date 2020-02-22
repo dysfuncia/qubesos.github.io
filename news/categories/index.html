@@ -5,7 +5,11 @@ permalink: /news/categories/
 ref: 216
 title: News Categories
 ---
-
+{% if page.lang ==nil or page.lang contains "en"%}
+      	{% assign lang = "" %}
+      {% else %}
+      	{% assign lang = page.lang %}
+      {% endif %}
 {% assign raw_categories = "" %}
   {% for post in site.posts %}
     {% assign category_list = post.categories | join:'|' | append:'|' %}
@@ -26,7 +30,7 @@ title: News Categories
 
 <h1>News by Category</h1>
 <p>
-  <a href="/news/"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to main News page</a>
+<a href="{{ lang }}/news/"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to main News page</a>
 </p>
 {% for category in categories %}
 <a href="#{{ category | slugify }}" class="btn btn-sm btn-primary"><i class="fa fa-tag" aria-hidden="true"></i> {{ category | capitalize }}</a>
