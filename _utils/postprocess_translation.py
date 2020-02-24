@@ -1,120 +1,351 @@
 #!/usr/bin/python3
-#python posprocess_translation.py bg bg/ --yml
-#adds language pattern in permalink line and all found relative links in the current open file recursively from a given root dir
+# adds language pattern in permalink line and all found relative links in the current open file recursively from a given root dir
+# evoke like: python _utils/postprocess_translation.py de _qubes-translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
 #param1 is the language in short form
-#param2 is the root dir
-#param3 is optional indicating .yml files to be processed as in _data directory with no frontmatter whatsoever
+#param2 is the root translated dir 
+#param3 is current transifex mapping between original and translated files in the format: 
+# file_filter=
+# source_file=
+#param3 is the output of the script prepare_tx_config.sh
+#param4 is the name for the file containing all th epermalinks of translated/downloaded via tx client files. it is afterwards used by postprocess_translation.sh script 
+#param5 is optional indicating .yml files to be processed as in _data directory with no frontmatter whatsoever
+
 import os
 import sys
-import frontmatter
 import argparse 
 import io
+from collections import deque
+import re
+import frontmatter
 import yaml
 
 patterns = (
     "](/",
     "]: /",
-    "url: /",
     "href=\"/",
+    "url: /",
     "href=\'/",
 )
-news="/news/"
-qubes_issues="/qubes-issues/"
-url_key="url"
+# TODO vereinfachen der if bedingung mit einer liste von ommitted urls patterns
+news = "/news/"
+qubes_issues = "/qubes-issues/"
+# constants and such
+# yml keys:
+URL_KEY = "url"
+# md frontmatterkeys:
+PERMALINK_KEY = 'permalink'
+REDIRECT_KEY = 'redirect_from'
+LANG_KEY = 'lang'
+TRANSLATED_KEY = 'translated'
+SLASH = '/'
 
-def process_markdown(filepath, lang):
-    md = frontmatter.Post
-    with io.open(filepath) as fp:
-        md = frontmatter.load(fp)
-        if md.get('permalink') != None and not md.get('permalink').startswith("/"+lang +"/"):
-            md['permalink'] = "/" + lang + md.get('permalink')
-        
-        if md.get('redirect_from') != None:
-            redirects = md.get('redirect_from')
-            if isinstance(redirects, str):
-                redirects = [redirects]
-            if any('..' in elem for elem in redirects):
-                print('ERRROR: \'..\' found in redirect_from')
-                sys.exit(1)
-            md['redirect_from'] = [("/" + lang + elem.replace('/en/', '/') if not elem.startswith("/" + lang + "/") else elem)
-                                   for elem in redirects]
-            if md['permalink'] in md['redirect_from']:
-                md['redirect_from'].remove(md['permalink'])
+MD_URL_SPLIT_PATTERNS = ['/)','/#']
+TRANSLATED_LANGS = ['de']
 
-        if md.get('lang') != None:
-            md['lang'] = lang
-        md['translated'] = 'yes'
-        ## for testing only
-        #if md.get('title') != None:
-        #    md['title'] = lang + md.get('title')
+# global contianers
+not_translated_internal_urls = set()
+missing_translated_files = deque()
 
-            # replace links
-    lines=[]
-    for line in md.content.splitlines():
-        for pattern in patterns:
-            if pattern in line:
-                tmp = line.split(pattern)
-                line = tmp[0]
-                for part in range(1, len(tmp)):
-                    if not tmp[part].startswith(lang + "/") and \
-                            not tmp[part].startswith('news') and \
-                            not tmp[part].startswith('attachment') and \
-                            not tmp[part].startswith('qubes-issues'):
-                        line += pattern + lang + "/" + tmp[part]
-                    else:
-                        line += pattern + tmp[part]
-        lines.append(line)
+def write_to_file(filename, lines):
+    """ 
+    write the given data structure to a file
+    filename: the name of the file to be written to
+    lines: the content
+    """
+    with io.open(filename,'w') as c:
+        c.write('\n'.join(str(line) for line in lines))
+        c.truncate()
 
-    md.content=os.linesep.join(lines) + '\n'
+def process_markdown(source_file, translated_file, permalinks, lang):
+    """
+    for every uploaded via tx client markdown file for translation, replace the markdown frontmatter with the frontmatter of the original file,
+    set the specific language, set translated to yes and for all downloaded/updated via transifex files, respectively permalinks, 
+    add the specific language to the internal url
+    source_file: original file 
+    translated_file: marked and uploaded to transifex for translation, if not downloaded it will be printed out as a debug
+    permalinks:all internal links (permalink and redirect_from) belonging to the files dwonloaded from transifex
+    lang: the translation language
+    """
+    mdt = frontmatter.Post
+    try:
+        with io.open(source_file) as s, io.open(translated_file) as t:
+            mds = frontmatter.load(s)
+            mdt = frontmatter.load(t)
 
-    with io.open(filepath, 'wb') as replaced:
-        frontmatter.dump(md, replaced)
+            if mds.get(PERMALINK_KEY) != None:
+                mdt[PERMALINK_KEY] = SLASH + lang + mds.get(PERMALINK_KEY)
+    
+            if mds.get(REDIRECT_KEY) != None:
+                redirects = mds.get(REDIRECT_KEY)
+                if isinstance(redirects, str):
+                    redirects = [redirects]
+                # just in case 
+                if any('..' in elem for elem in redirects):
+                    print('ERRROR: \'..\' found in redirect_from')
+                    sys.exit(1)
+                mdt[REDIRECT_KEY] = [(SLASH + lang + elem.replace('/en/', SLASH) if not elem.startswith(SLASH + lang + SLASH) else elem)
+                               for elem in redirects]
 
-def replace_val(yml,key,val,lang):
-    yml[key]= "/" + lang + val if ("/"+lang not in val and val.startswith("/")) else val
-    return yml
+                if mds[PERMALINK_KEY] in mdt[REDIRECT_KEY]:
+                    mdt[REDIRECT_KEY].remove(mds[PERMALINK_KEY])
+                if mdt[PERMALINK_KEY] in mdt[REDIRECT_KEY]:
+                    mdt[REDIRECT_KEY].remove(mdt[PERMALINK_KEY])
 
-def process_yml(filepath,lang):
+                tmp = list(set(mdt[REDIRECT_KEY]))
+                mdt[REDIRECT_KEY] = tmp
+
+            mdt[LANG_KEY] = lang
+            mdt[TRANSLATED_KEY] = 'yes'
+            ## for testing purposes only
+            #if mdt.get('title') != None:
+            #    mdt['title'] = lang.upper() +"!: " + mdt.get('title')
+
+        # replace links
+        lines = []
+        for line in mdt.content.splitlines():
+            for pattern in patterns:
+                if pattern in line:
+                    tmp = line.split(pattern)
+                    line = tmp[0]
+                    for part in range(1, len(tmp)):
+                        if '../' in tmp[part]:
+                            print('ERRROR: \'..\' found in internal url: '+ tmp[part])
+                            sys.exit(1)
+                        if not tmp[part].startswith(lang + SLASH) and \
+                                not tmp[part].startswith('news') and \
+                                not tmp[part].startswith('attachment') and \
+                                not tmp[part].startswith('qubes-issues') and \
+                                split_and_check(tmp[part],permalinks):
+                            line += pattern + lang + SLASH + tmp[part]
+                        # TODO if a url contains a language but the url belongs to a file that is not translated should i  actually remove the language  -> overengineering?
+#                        elif tmp[part].startswith(lang+SLASH) and not split_and_check(tmp[part][len(lang)+1],permalinks):
+ #                           line += pattern + tmp[part][len(lang)+1]    
+                        else:
+                            line += pattern + tmp[part]
+            lines.append(line)
+
+        mdt.content = os.linesep.join(lines) + '\n'
+
+        with io.open(translated_file, 'wb') as replaced:
+            frontmatter.dump(mdt, replaced)
+
+
+    except FileNotFoundError as e:
+        #print('following file was not updated/downloaded from transifex:' + e.filename)
+        missing_translated_files.append(e.filename)
+
+
+def split_and_check(md_line, permalinks):
+    """
+    for every given line in a markdown line containing an internal link
+    return if the internal link belongs to a file already downloaded and translated from transifex
+    md_line: line in a markdown line containing an internal link
+    permalinks: all internal links (permalink and redirect_from) belonging to the files dwonloaded from transifex
+    """
+    for pattern in MD_URL_SPLIT_PATTERNS:
+        if pattern in md_line:
+            sp = md_line.split(pattern)
+            t = sp[0]
+            t = SLASH + t if not t.startswith(SLASH) else t
+            t = t + SLASH if not t.endswith(SLASH) else t
+            if t in permalinks:
+                return True
+            else:
+                not_translated_internal_urls.add(t)
+    return False
+
+
+def replace_url(to_replace, original, lang, permalinks):
+    """
+    recursively add language to the original value of the key URL if the file with the given URL is translated and save it to the translated yaml file.
+    if the file is not translated keep the original url
+    it assumes that the order between original and translated files loaded as dictionary is preserved
+    to_replace: the translated yaml content as a dictionary
+    original: the oritignal yaml content as a dictionary
+    lang: language, for example de
+    permalinks: urls of the translated/downloaded files from transifex
+    """
+    for (k_r, v_r), (k_o, v_o) in zip(to_replace.items(), original.items()):
+        if isinstance(v_r, list) and isinstance(v_o, list):
+            for i, j in zip(v_r, v_o):
+                replace_url(i, j, lang, permalinks)
+        elif URL_KEY == k_r and URL_KEY == k_o:
+            val = original[k_r]
+            to_replace[URL_KEY]= SLASH + lang + val if (val in permalinks) else val
+        elif k_r != k_o:
+            print("ERROR, ordered of the loaded yml file is not preserved " + k_r + k_o)
+            sys.exit(1)
+
+
+
+def process_yml(source, translated,lang, permalinks):
+    """
+    for every given sourc-translated yml file pair add the language to the urls if they belong to already translated files,
+    if not retain the original ones
+    source: original yml file
+    translated: translated yml file
+    lang: language, for example de
+    permalinks: all internal links (permalink and redirect_from) belonging to the files downloaded from transifex
+    """
     docs = []
-    with io.open(filepath) as fp:
-        docs = yaml.full_load(fp)
-        for a in docs:
-            if url_key in a:
-                val = a[url_key]
-                #print(val)
-                #a[url_key] = "/" + lang + val if (lang not in val and val.startswith("/")) else val
-                a=replace_val(a,url_key,a[url_key],lang)
-                for b in a['sub-pages']:
-                    #v = b[url_key]
-                    b=replace_val(b,url_key,b[url_key],lang)
-                    #b[url_key] = "/" + lang + v if (lang not in v and v.startswith("/")) else v
-            else:
-                return
+    try:
+        with io.open(source) as fp, io.open(translated) as tp:
+            docs_original = yaml.full_load(fp)
+            docs = yaml.full_load(tp)
+            for a, b in zip(docs, docs_original):
+                replace_url(a, b, lang, permalinks)
+    except FileNotFoundError as e:
+        #print('following file was not updated/downloaded from transifex:' + e.filename)
+        missing_translated_files.append(e.filename)
 
-    with io.open(filepath, 'w') as replaced:
-        yaml.dump(docs, replaced, sort_keys=True)
+    try:
+        with io.open(translated, 'w') as replace:
+            yaml.dump(docs, replace, sort_keys=False)
 
-def main(rootDir, lang, yml):
-    for dirName, subdirList, fileList in os.walk(rootDir):
-        print('current directory: %s' % dirName)
-        if dirName[0] == '.':
+    except FileNotFoundError as e:
+        print('do nothing:' + e.filename)
+
+
+def get_all_the_hrefs(translated_dir):
+    """
+    traverse the already updated (via tx pull) root directory with all the translated files for a specific language 
+    and get all the internal urls that are embedded in hmtl code in an href attribute
+    translated_dir: root directory with all the translated files for a specific language
+    return: set holding all the internal urls that are embedded in hmtl code in an href attribute
+    """
+
+    href = set()
+    reg ='(?<=href=\").*?(?=\")'
+    for dirname, subdirlist, filelist in os.walk(translated_dir):
+        if dirname[0] == '.':
             continue
-        for fileName in fileList:
-            print('\t%s' % fileName)
-            if fileName[0] == '.':
+        for filename in filelist:
+            if filename[0] == '.':
                 continue
-            filepath=dirName+"/"+fileName
-            if yml:
-                process_yml(filepath,lang)
-            else:
-                process_markdown(filepath,lang)
+            filepath = dirname + SLASH + filename
+            try:
+                with io.open(filepath) as fp:
+                    lines = fp.readlines()
+                    for line in lines:
+                        t = re.findall(reg, line)
+                        if len(t)>0:
+                            for i in t:
+                                href.add(i)
+            except FileNotFoundError as e:
+                print('problem opening a file in the translated dir:' + e.filename)
+                sys.exit(1)
+    return href
+
+def get_all_translated_permalinks_and_redirects(translated_dir,lang):
+    """
+    traverse the already updated (via tx pull) root directory with all the translated files for a specific language 
+    and get their permalinks without the specific language
+    translated_dir: root directory with all the translated files for a specific language
+    lang: the specific language
+    return: set holding the original (language code is removed) permalinks and redirects
+    """
+
+    perms = set()
+    for dirname, subdirlist, filelist in os.walk(translated_dir):
+      #  print('current directory: %s' % dirname)
+        if dirname[0] == '.':
+            continue
+        for filename in filelist:
+            #print('\t%s' % filename)
+            if filename[0] == '.':
+                continue
+            filepath = dirname + SLASH + filename
+            md = frontmatter.Post
+            with io.open(filepath) as fp:
+                md = frontmatter.load(fp)
+                if md.get(PERMALINK_KEY) != None:
+                    perms.add(md.get(PERMALINK_KEY)[len(lang)+1:] if md.get(PERMALINK_KEY).startswith(SLASH+lang +SLASH) else md.get(PERMALINK_KEY))
+                redirects = md.get(REDIRECT_KEY)
+                if redirects != None:
+                    if isinstance(redirects,list):
+                        for r in redirects:
+                            perms.add(r[len(lang)+1:] if r.startswith(SLASH+lang +SLASH) else r)
+                    elif isinstance(redirects,str):
+                        perms.add(redirects)
+                    else:
+                        print('ERRROR: unexpected in redirect_from: ' + redirects)
+                        sys.exit(1)
+    return perms
+
+def create_dict_from_tx_config(mappingfile, lang):
+    """
+    read a tx.xonfig file containing only file_filter and source_file information store it in a dict and give it back
+    mappingfile:  a tx.xonfig file containing only file_filter and source_file information
+    return: a dict containing a mapping betreen an original file and its downloaded tx translation
+    """
+    mapping = {}
+    with io.open(mappingfile) as fp:
+        lines = fp.readlines()
+        translated = ['./'+x.split('file_filter =')[1].strip().replace('<lang>',lang) for x in lines if lines.index(x)%2==0]
+        source = ['./'+x.split('source_file =')[1].strip() for x in lines if lines.index(x)%2==1]
+
+        for x in translated:
+            mapping.update({source[translated.index(x)]:x})
+    return mapping
+
+
+def main(translated_dir, lang, yml, mapping, href_filename):
+    perms = get_all_translated_permalinks_and_redirects(translated_dir, lang)
+    write_to_file('_utils/perms.txt',perms)
+
+    
+    hrefs = get_all_the_hrefs(args.translateddir)
+    write_to_file(href_filename,perms.intersection(hrefs))
+
+
+    # for each pair of source and translated file postprocess the translated file 
+    for key, item in mapping.items():
+        if yml and item.endswith('.yml'):
+            process_yml(key, item, lang, perms)
+        else:
+            process_markdown(key, item, perms, lang)  
+
 
 
 if __name__ == '__main__':
+
+    # python _utils/postprocess_translation.py de _qubes-translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
     parser = argparse.ArgumentParser()
+    # for which language should we do this
     parser.add_argument("language")
-    parser.add_argument("directory")
+    # the directory containing the translated (downloaded via tx pull) files
+    parser.add_argument("translateddir")
+    # provide the mappingfile from tx configuration containing the file_filter to source_file mapping
+    parser.add_argument("tx_mappingfile")
+    # name of the file to contain all the internal urls that are embedded in hmtl code in an href attribute 
+    # for later processing bt postprocess_translation.sh 
+    parser.add_argument("translated_hrefs_filename")
+    # whether or not to process yml files
     parser.add_argument("--yml", action='store_true')
     args = parser.parse_args()
 
-    main(args.directory, args.language, args.yml)
+
+    if not os.path.isfile(args.tx_mappingfile):
+        print("please check your transifex mapping file")
+        sys.exit(1)
+        
+    if not os.path.isdir(args.translateddir):
+        print("please check your translated directory")
+        sys.exit(1)
+
+    if not args.language in TRANSLATED_LANGS:
+        print("language not in the expected translation languages")
+        sys.exit(1)
+    
+    source_translation_mapping = create_dict_from_tx_config(args.tx_mappingfile, args.language)
+
+#    print("###########################")
+#    print(source_translation_mapping)
+#    print("###########################")
+
+    main(args.translateddir, args.language, args.yml, source_translation_mapping, args.translated_hrefs_filename)
+
+
+    # debug purposes only
+    write_to_file('_utils/not_translated_internal_urls.txt', not_translated_internal_urls)
+    write_to_file('_utils/not_downloaded_translated_files.txt', missing_translated_files)
