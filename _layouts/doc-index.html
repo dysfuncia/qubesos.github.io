@@ -4,15 +4,40 @@
     <body>
       {% include header.html %}
       <div class="container">
-	 {% if page.lang==nil or page.lang contains "en" %}
-          {% assign lang = "" %}
+	{% if page.lang == nil or page.lang == "en" %}
+          	{% assign lang = "" %}
         {% else %}
-          {% assign lang = "/" | append: page.lang %}
+          	{% assign lang = "/" | append: page.lang %}
         {% endif %}
+
+	{% assign doc_rb_link = lang  | append: "/doc/reporting-bugs/" %}
+        {% assign d_rb = site.doc | concat: site.qubes-translated | where:'permalink', doc_rb_link %}
+        {% if d_rb.size == 0 %}
+                {% assign doc_rb_link =  "/doc/reporting-bugs/" %}
+        {% endif %}
+
+	{% assign doc_gd_link = lang  | append: "/doc/doc-guidelines/" %}
+        {% assign doc_gd = site.doc | concat: site.qubes-translated | where:'permalink', doc_gd_link %}
+        {% if doc_gd.size == 0 %}
+                {% assign doc_gd_link = "/doc/doc-guidelines/" %}
+        {% endif %}
+
+	{% assign security_link = lang  | append: "/security/" %}
+        {% assign sec = site.doc | concat: site.qubes-translated | where:'permalink', security_link %}
+        {% if sec.size == 0 %}
+                {% assign security_link = "/security/" %}
+        {% endif %}
+
+	{% assign doc_link = lang | append: "/doc/" %}
+        {% assign docs = site.doc | concat: site.qubes-translated | where:'permalink', doc_link %}
+        {% if docs.size == 0 %}
+                {% assign doc_link = "/doc/" %}
+        {% endif %}
+
         <div class="row more-top">
           <div class="col-lg-4 col-md-4">
             <h1 class="add-left outer-heading">
-		    <a href="{{ lang }}/doc/" class="heading-link">
+		    <a href="{{ doc_link }}" class="heading-link">
                 <i class="fa fa-book"></i>
                   {{ page.title }}
               </a>
@@ -20,9 +45,9 @@
           </div>
           <div class="col-lg-8 col-md-8 button-heading">
             <h1 class="outer-heading">
-		    <a href="{{ lang }}/security/" class="btn btn-default half-top"><i class="fa fa-lock" aria-hidden="true"></i> Report a Security Issue</a>
-            <a href="{{ lang }}/doc/reporting-bugs/" class="btn btn-default half-top"><i class="fa fa-bug" aria-hidden="true"></i> Report a Bug</a>
-            <a href="{{ lang }}/doc/doc-guidelines/" class="btn btn-default half-top add-right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Improve the Documentation</a>
+		    <a href="{{ security_link }}" class="btn btn-default half-top"><i class="fa fa-lock" aria-hidden="true"></i> Report a Security Issue</a>
+		    <a href="{{ doc_rb_link }}" class="btn btn-default half-top"><i class="fa fa-bug" aria-hidden="true"></i> Report a Bug</a>
+		    <a href="{{ doc_gd_link }}" class="btn btn-default half-top add-right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Improve the Documentation</a>
             <a href="https://github.com/QubesOS/qubes-doc" class="half-top fa fa-github black-icon" aria-hidden="true" title="View the Documentation on GitHub"></a>
             </h1>
           </div>

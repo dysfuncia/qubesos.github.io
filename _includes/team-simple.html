@@ -1,12 +1,19 @@
 <p id="{{team.name | slugify}}">
-  {% if page.lang contains "en" %}
-        {% assign lang = "" %}
-  {% else %}
-        {% assign lang = "/" | append: page.lang %}
-  {% endif %}
-  <a href="{{ lang }}/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
+{% if page.lang == nil or page.lang == "en" %}
+	{% assign lang = "" %}
+{% else %}
+	{% assign lang = "/" | append: page.lang %}
+{% endif %}
+
+{% assign team_link = lang | append: "/team/" %}
+{% assign t = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
+{% if t.size == 0 %}
+	{% assign team_link =  "/team/" %}
+{% endif %}
+
+	<a href="{{ team_link }}#{{ team.name | slugify }}" class="black-link">{{team.name}}</a>
   <em>{{team.role}}</em><br>
   {% if team.email %}
-  <a href="mailto:{{team.email}}"><i class="fa fa-envelope"></i> Email</a>
+  <a href="mailto:{{ team.email }}"><i class="fa fa-envelope"></i> Email</a>
   {% endif %}
 </p>

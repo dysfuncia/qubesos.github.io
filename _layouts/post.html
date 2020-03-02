@@ -4,18 +4,38 @@
     <body>
       {% include header.html %}
       <div class="container">
-	 {% if page.lang==nil or page.lang contains "en" %}
-          {% assign lang = "" %}
+	{% if page.lang == nil or page.lang == "en" %}
+          	{% assign lang = "" %}
         {% else %}
-          {% assign lang = "/" | append: page.lang %}
+          	{% assign lang = "/" | append: page.lang %}
         {% endif %}
+
+	{% assign ns_link = lang | append: "/news/" %}
+        {% assign ns = site.posts | where:'permalink', ns_link %}
+        {% if ns.size == 0 %}
+                {% assign ns_link = "/news/" %}
+        {% endif %}
+
+        {% assign nsc_link = lang | append: "/news/categories/" %}
+        {% assign nsc = site.posts | where:'permalink', nsc_link %}
+        {% if nsc.size == 0 %}
+                {% assign nsc_link = "/news/categories/" %}
+        {% endif %}
+
+	{% assign team_link = lang | append: "/team/" %}
+        {% assign t = site.pages | concat: site.doc | concat: site.qubes-translated | where:'permalink', team_link %}
+        {% if t.size == 0 %}
+                {% assign team_link = "/team/" %}
+        {% endif %}
+
+
         <div class="row more-top">
           <div class="col-lg-7 col-md-7">
             <h1 class="add-left outer-heading">
-              <a href="{{ lang }}/news/" class="heading-link">
+		    <a href="{{ ns_link }}" class="heading-link">
                 <i class="fa fa-newspaper-o"></i> News
               </a>
-              <a href="{{ lang }}/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
+              <a href="{{ nsc_link }}" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
             </h1>
           </div>
           <div class="col-lg-5 col-md-5 button-heading">
@@ -46,7 +66,7 @@
                   {% endfor %}
                   {% if page.author %}
                     {% if author_team %}
-                      <a href="{{ lang }}/team/#{{ page.author | slugify }}">{{ page.author }}</a>
+		    <a href="{{ team_link }}#{{ page.author | slugify }}">{{ page.author }}</a>
                     {% else %}
                       {{ page.author }}
                     {% endif %}
@@ -58,10 +78,10 @@
                   in <strong>
                   {% if page.categories.first %}
                     {% for category in page.categories %}
-                      <a href="{{ lang }}/news/categories/#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+		    <a href="{{ nsc_link }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
                     {% endfor %}
                   {% else %}
-                    <a href="{{ lang }}/news/categories/#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+                    <a href="{{ nsc_link }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
                   {% endif %}
                   </strong>
                 </p>

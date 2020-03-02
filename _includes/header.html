@@ -9,19 +9,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% if page.lang ==nil or page.lang contains "en"%}
+      <!-- TODO wtf -->
+      {% if page.lang == nil or page.lang == "en"%}
       	{% assign lang = "" %}
       {% else %}
       	{% assign lang = page.lang %}
       {% endif %}
-      <a class="page-link" href="/{{lang}}">
+      <a class="page-link" href="/">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-	  {% if page.layout==nil or page.collection == 'posts' %}
+	  {% if page.layout == nil or page.collection == 'posts' %}
           <!-- no translation for news -->
 	  	{% assign lang = "en" %}
           	{% assign archies = site.data.architecture %}
@@ -29,10 +30,13 @@
             		<li><a href="{{ section.url }}">{{ section.title }}</a></li>
           	{% endfor %}
          {% else %}
-         	{% if page.lang == nil or page.lang=="en" %}
+         	{% if page.lang == nil or page.lang == "en" %}
 			{% assign archies = site.data.architecture %}
 		{% else %}
 			{% assign archies = site.data.translation[page.lang].architecture %}
+			{% if archies == nil or archies.size == 0 %}
+                                {% assign archies = archies.data.architecture %}
+                        {% endif %}
 		{% endif %}
           	{% for section in archies %}
                 	<li><a href="{{ section.url }}">{{ section.title }}</a></li>
@@ -49,7 +53,7 @@
              <span><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></span>
              <div class="langdropdown-items">
                {% for post in posts %}
-                 <a class="c1" href="{{post.url}}">{{post.lang}}</a>
+                 <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
                {% endfor %}
              </div>
            </div>

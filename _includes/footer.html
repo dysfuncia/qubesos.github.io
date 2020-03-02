@@ -18,30 +18,51 @@
   </div>
   </div>
   <div class="row footer-nav">
-	  {% if page.lang==nil or page.lang == "en" or page.layout contains "post" %}
-			{% assign archies = site.data.architecture %}
-		{% else %}
-			{% assign archies = site.data.translation[page.lang].architecture %}
-		{% endif %}
+{% if page.lang == nil or page.lang == "en" or page.layout contains "post" %}
+	{% assign archies = site.data.architecture %}
+{% else %}
+	{% assign archies = site.data.translation[page.lang].architecture %}
+	{% if archies == nil or archies.size == 0 %}
+		{% assign archies = archies.data.architecture %}
+	{% endif %}
+{% endif %}
     {% for section in archies %}
     <div class="col-lg-2 col-md-2">
-      <a href="{{section.url}}"><h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5></a>
+      <a href="{{ section.url }}"><h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5></a>
       <ul class="list-unstyled">
         {% for sub in section.sub-pages %}
-        <li><a href="{{sub.url}}">{{sub.title}}</a></li>
+        <li><a href="{{ sub.url }}">{{sub.title}}</a></li>
         {% endfor %}
       </ul>
     </div>
     {% endfor %}
   </div>
   <div class="row footer-nav text-center more-top add-bottom">
-	{% if page.lang==nil or page.lang contains "en" %}
-        {% assign lang = "" %}
-      {% else %}
-        {% assign lang = "/" | append: page.lang %}
-      {% endif %}
+	{% if page.lang == nil or page.lang == "en" %}
+        	{% assign lang = "" %}
+      	{% else %}
+        	{% assign lang = "/" | append: page.lang %}
+      	{% endif %}
+
+    	{% assign doc_rb_link = lang | append: "/doc/reporting-bugs/" %}
+        {% assign d_rb = site.doc | concat: site.qubes-translated | where:'permalink', doc_rb_link %}
+        {% if d_rb.size == 0 %}
+                {% assign doc_rb_link = "/doc/reporting-bugs/" %}
+        {% endif %}
+
+	{% assign privacy_link = lang | append: "/privacy/" %}
+        {% assign pri = site.pages | concat: site.qubes-translated | where:'permalink', privacy_link %}
+        {% if pri.size == 0 %}
+                {% assign privacy_link = "/privacy/" %}
+        {% endif %}
+
+	{% assign terms_link = lang | append: "/terms/" %}
+        {% assign terms = site.pages | concat: site.qubes-translated | where:'permalink', terms_link %}
+        {% if terms.size == 0 %}
+                {% assign terms_link = "/terms/" %}
+        {% endif %}
     <div class="footer-logo more-bottom">
-	    <a href="/{{lang}}"><img src="/attachment/icons/logo-outline-small.svg" alt="Qubes"><strong>Qubes</strong> OS</a>
+	    <a href="/"><img src="/attachment/icons/logo-outline-small.svg" alt="Qubes"><strong>Qubes</strong> OS</a>
     </div>
     <p>
       &#169; <script type="text/javascript">
@@ -49,9 +70,9 @@
              </script><noscript>2020</noscript> The Qubes OS Project and others<br>
       <a href="https://github.com/QubesOS/qubesos.github.io">Website Source Code</a> |
       <a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion">Tor Onion Service</a> |
-      <a href="{{ lang }}/doc/reporting-bugs/">Report a Problem</a> |
-      <a href="{{ lang }}/privacy/">Privacy Policy</a> |
-      <a href="{{ lang }}/terms/">Terms of Use</a> |
+      <a href="{{ doc_rb_link }}">Report a Problem</a> |
+      <a href="{{ privacy_link }}">Privacy Policy</a> |
+      <a href="{{ terms_link }}">Terms of Use</a> |
       <a href="/sitemap.xml">Sitemap</a>
     </p>
   </div>

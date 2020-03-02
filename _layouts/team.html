@@ -4,11 +4,49 @@
     <body>
       {% include header.html %}
       <div class="container">
-	{% if page.lang contains "en" %}
-          {% assign lang = "" %}
-        {% else %}
-          {% assign lang = "/" | append: page.lang %}
-        {% endif %}  
+	{% if page.lang == nil or page.lang == "en" %}
+		{% assign lang = "" %}
+	{% else %}
+		{% assign lang = "/" | append: page.lang %}
+	{% endif %}  
+
+
+        {% assign support_link = lang | append: "/support/" %}
+	{% assign supports = site.doc | concat: site.qubes-translated | where:'permalink', support_link %}
+        {% if supports.size == 0 %}
+                {% assign support_link = "/support/" %}
+        {% endif %}
+
+	{% assign doc_rb_link = "/doc/reporting-bugs/" | prepend: lang %}
+	{% assign d_rb = site.doc | concat: site.qubes-translated |  where: "permalink", doc_rb_link %}
+        {% if d_rb.size == 0 %}
+                {% assign doc_rb_link = "/doc/reporting-bugs/" %}
+        {% endif %}
+
+        {% assign security_link = lang | append: "/security/" %}
+        {% assign securities = site.doc | concat: site.qubes-translated | where:'permalink', security_link %}
+        {% if securities.size == 0 %}
+                {% assign security_link = "/security/" %}
+        {% endif %}
+
+        {% assign join_link = lang | append: "/join/" %}
+	{% assign joins = site.doc | concat: site.qubes-translated | where:'permalink', join_link %}
+        {% if joins.size == 0 %}
+                {% assign join_link = "/join/" %}
+        {% endif %}
+
+        {% assign partners_link = lang | append: "/partners/" %}
+	{% assign partners = site.pages | concat: site.qubes-translated | where:'permalink', partners_link %}
+        {% if partners.size == 0 %}
+                {% assign partners_link = "/partners/" %}
+        {% endif %}
+
+        {% assign hw_link = lang | append: "/hardware-certification/" %}
+	{% assign hw = site.doc | concat: site.qubes-translated | where:'permalink', hw_link %}
+        {% if hw.size == 0 %}
+                {% assign hw_link = "/hardware-certification/" %}
+        {% endif %}
+
         <div class="row more-top more-bottom">
           <div class="col-lg-4 col-md-3">
             <h1 class="add-left outer-heading">
@@ -18,18 +56,18 @@
           </div>
           <div class="col-lg-3 col-md-3 add-left">
             <ul class="list-unstyled">
-              <li><a href="{{ lang }}/security/"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
-              <li><a href="{{ lang }}/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
-              <li><a href="{{ lang }}/support/"><i class="fa fa-life-ring fa-fw black-icon"></i> Get help and support</a></li>
-              <li><a href="{{ lang }}/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
+		<li><a href="{{ security_link }}"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
+              <li><a href="{{ doc_rb_link }}"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
+	      <li><a href="{{ support_link }}"><i class="fa fa-life-ring fa-fw black-icon"></i> Get help and support</a></li>
+	      <li><a href="{{ join_link }}"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-5 add-left">
             <ul class="list-unstyled">
               <li><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries: <a href="mailto:press@qubes-os.org">press@qubes-os.org</a></li>
               <li><i class="fa fa-briefcase fa-fw"></i> Business inquiries: <a href="mailto:business@qubes-os.org">business@qubes-os.org</a></li>
-              <li><a href="{{ lang }}/partners/"><i class="fa fa-globe fa-fw black-icon"></i> Become a Qubes Partner</a></li>
-              <li><a href="{{ lang }}/hardware-certification/"><i class="fa fa-laptop fa-fw black-icon"></i> Request hardware certification</a></li>
+	      <li><a href="{{ partners_link }}"><i class="fa fa-globe fa-fw black-icon"></i> Become a Qubes Partner</a></li>
+              <li><a href="{{ hw_link }}"><i class="fa fa-laptop fa-fw black-icon"></i> Request hardware certification</a></li>
             </ul>
           </div>
         </div>

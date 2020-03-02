@@ -1,9 +1,49 @@
 <div class="more-bottom white-box page-content">
-   {% if page.lang contains "en" %}
-   	{% assign lang = "" %}
-   {% else %}
-   	{% assign lang = "/" | append: page.lang %}
-   {% endif %}
+	<!-- TODO contains en? not equal? come on-->
+	{% if page.lang == nil or page.lang == "en" %}
+		{% assign lang = "" %}
+	{% else %}
+		{% assign lang = "/" | append: page.lang %}
+	{% endif %}
+   <!-- assign respective urls for existing languages-->
+
+        {% assign support_link = lang | append: "/support/" %}
+        {% assign supports = site.doc | concat: site.qubes-translated | where:'permalink', support_link %}
+        {% if supports.size == 0 %}
+                {% assign support_link = "/support/" %}
+        {% endif %}
+
+	{% assign doc_link = lang | append: "/doc/" %}
+	{% assign docs = site.doc | concat: site.qubes-translated | where:'permalink', doc_link %}
+	{% if docs.size == 0 %}
+		{% assign doc_link = "/doc/" %}
+ 	{% endif %}	
+
+	{% assign doc_gd_link = lang | append: "/doc/doc-guidelines/" %}
+	{% assign doc_gd = site.doc | concat: site.qubes-translated | where:'permalink', doc_gd_link %}
+	{% if doc_gd.size == 0 %}
+		{% assign doc_gd_link = "/doc/doc-guidelines/" %}
+ 	{% endif %}	
+
+
+	{% assign doc_rb_link =  lang | append: "/doc/reporting-bugs/" %}
+	{% assign d_rb = site.doc | concat: site.qubes-translated | where:'permalink', doc_rb_link %}
+	{% if d_rb.size == 0 %}
+		{% assign doc_rb_link = "/doc/reporting-bugs/" %}
+ 	{% endif %}	
+
+	{% assign donate_link = lang | append: "/donate/" %}
+	{% assign donate = site.pages | concat: site.qubes-translated | where:'permalink', donate_link %}
+	{% if donate.size == 0 %}
+		{% assign donate_link = "/donate/" %}
+ 	{% endif %}	
+	{% if lang == "" %}
+	  	{% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
+	  	{% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}
+	{% else %}
+	  	{% assign master_edit =  site.project_repo_path | append: "/qubes-translated/edit/master" | append: page.relative_path | remove_first: '_qubes-translated'  %}
+	  	{% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path| remove_first: '_qubes-translated'  %}
+	{% endif %}
   <div class="row">
     <div class="col-lg-3 col-md-3 text-center">
       <div class="page-source-side remove-bottom">
@@ -12,42 +52,43 @@
       <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">Contents</a>
       <div id="page-toc" class="collapse in"></div>
       <div class="page-source-side">
-        <a href="{{ lang }}/doc/"
+
+        <a href="{{ doc_link }}"
            class="btn btn-primary btn-block"
            title="Go to Documentation">
           <span class="fa fa-fw fa-book"></span> Documentation
         </a><br>
-        <a href="{{ lang }}/doc/doc-guidelines/"
+        <a href="{{ doc_gd_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Improve the Docs"
            target="_blank">
           <span class="fa fa-fw fa-pencil"></span> Improve the Docs
         </a><br>
-        <a href="{{ site.project_repo_path }}/qubes-doc/blob/master{{ page.relative_path | remove_first: '_doc' }}"
+        <a href="{{ master_blob }}"
            class="page-source-link btn btn-default btn-block"
            title="View page source"
            target="_blank">
           <span class="fa fa-fw fa-code"></span> View Page Source
         </a><br>
-        <a href="{{ site.project_repo_path }}/qubes-doc/edit/master{{ page.relative_path | remove_first: '_doc' }}"
+        <a href="{{ master_edit }}"
            class="page-source-link btn btn-default btn-block"
            title="Edit this page"
            target="_blank">
           <span class="fa fa-fw fa-code-fork"></span> Edit This Page
         </a><br>
-        <a href="{{ lang }}/doc/reporting-bugs/"
+	<a href="{{ doc_rb_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Report a Bug"
            target="_blank">
           <span class="fa fa-fw fa-bug"></span> Report a Bug
         </a><br>
-        <a href="{{ lang }}/support/"
+        <a href="{{ support_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Help & Support"
            target="_blank">
           <span class="fa fa-fw fa-life-ring"></span> Help & Support
         </a><br>
-        <a href="{{ lang }}/donate/"
+	<a href="{{ donate_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Make a Donation"
            target="_blank">
@@ -64,42 +105,43 @@
     </div>
   </div>
   <div class="page-source-bottom">
-        <a href="{{ lang }}/doc/"
+	  <a href="{{ doc_link }}"
            class="btn btn-primary btn-block"
            title="Go to Documentation">
           <span class="fa fa-fw fa-book"></span> Documentation
         </a><br>
-        <a href="{{ lang }}/doc/doc-guidelines/"
+	<a href="{{ doc_gd_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Improve the Docs"
            target="_blank">
           <span class="fa fa-fw fa-pencil"></span> Improve the Docs
         </a><br>
-        <a href="{{ site.project_repo_path }}/qubes-doc/blob/master{{ page.relative_path | remove_first: '_doc' }}"
+        <a href="{{ master_blob }}"
            class="page-source-link btn btn-default btn-block"
            title="View page source"
            target="_blank">
           <span class="fa fa-fw fa-code"></span> View Page Source
         </a><br>
-        <a href="{{ site.project_repo_path }}/qubes-doc/edit/master{{ page.relative_path | remove_first: '_doc' }}"
+        <a href="{{ master_edit }}"
            class="page-source-link btn btn-default btn-block"
            title="Edit this page"
            target="_blank">
           <span class="fa fa-fw fa-code-fork"></span> Edit This Page
         </a><br>
-        <a href="{{ lang }}/doc/reporting-bugs/"
+        <a href="{{ doc_rb_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Report a Bug"
            target="_blank">
           <span class="fa fa-fw fa-bug"></span> Report a Bug
         </a><br>
-        <a href="{{ lang }}/support/"
+
+	<a href="{{ support_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Help & Support"
            target="_blank">
           <span class="fa fa-fw fa-life-ring"></span> Help & Support
         </a><br>
-        <a href="{{ lang }}/donate/"
+	<a href="{{ donate_link }}"
            class="page-source-link btn btn-default btn-block"
            title="Make a Donation"
            target="_blank">
