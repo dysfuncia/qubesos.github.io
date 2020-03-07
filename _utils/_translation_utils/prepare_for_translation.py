@@ -5,27 +5,28 @@
 #param2 is the root dir
 # expects a file containing the value of the current reference counter as a third argument with exactly onle line in the form of
 # current counter: x
-import os
-import sys
-import frontmatter
-import argparse
-import io
+from io import open as iopen
+from os.path import isfile
+from sys import exit
+from argparse import ArgumentParser
+from frontmatter import Post, load, dump
+from logging import basicConfig, getLogger, DEBUG, Formatter, FileHandler
 
 
 def read_counter(counterfile):
-    if not os.path.isfile(counterfile):
+    if not isfile(counterfile):
         print('check your files')
-        sys.exit()
-    with io.open(counterfile,'r') as c:
+        exit()
+    with iopen(counterfile,'r') as c:
         counter_line=c.readline()
         counter_a=counter_line.split('current counter: ')
     return int(counter_a[1])
 
 def write_counter_to_file(counter, counterfile):
-    if not os.path.isfile(counterfile):
+    if not isfile(counterfile):
         print('check your files')
-        sys.exit()
-    with io.open(counterfile,'w') as c:
+        exit()
+    with iopen(counterfile,'w') as c:
         counter_line ='current counter: ' + str(counter)
         c.writelines(counter_line)
         c.truncate()
@@ -41,8 +42,8 @@ def main(rootDir, lang, counter):
             if fileName[0] == '.':
                 continue
             filepath=dirName+"/"+fileName
-            with io.open(filepath) as fp:
-                md = frontmatter.load(fp)
+            with iopen(filepath) as fp:
+                md = load(fp)
                 if not md.metadata:
                     continue
                 if md.get('lang') == None:
@@ -52,15 +53,15 @@ def main(rootDir, lang, counter):
                     md['ref'] = counter
                     counter+=1
 
-            with io.open(filepath, 'wb') as replaced:
-                frontmatter.dump(md,replaced)
+            with iopen(filepath, 'wb') as replaced:
+                dump(md,replaced)
                 replaced.write(b'\n')
 
     return counter
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
+    parser = ArgumentParser()
     parser.add_argument("language")
     parser.add_argument("directory")
     parser.add_argument("counterfile")
