@@ -2,1240 +2,1240 @@
 host = https://www.transifex.com
 
 
-[qubes.test_doc_doc]
+[qubes.testt_doc]
 file_filter = _qubes-translated/<lang>/_doc/doc.md
 source_file = _doc/en/_doc/doc.md
 source_lang = en
 type = GITHUBMARKDOWN
 
 
-[qubes.test_doc_project-security_security-bulletins-template]
+[qubes.testt_project-security_security-bulletins-template]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security-bulletins-template.md
 source_file = _doc/en/_doc/project-security/security-bulletins-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_canary-template]
+[qubes.testt_project-security_canary-template]
 file_filter = _qubes-translated/<lang>/_doc/project-security/canary-template.md
 source_file = _doc/en/_doc/project-security/canary-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_canary-checklist]
+[qubes.testt_project-security_canary-checklist]
 file_filter = _qubes-translated/<lang>/_doc/project-security/canary-checklist.md
 source_file = _doc/en/_doc/project-security/canary-checklist.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_canaries]
+[qubes.testt_project-security_canaries]
 file_filter = _qubes-translated/<lang>/_doc/project-security/canaries.md
 source_file = _doc/en/_doc/project-security/canaries.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_security-bulletins]
+[qubes.testt_project-security_security-bulletins]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security-bulletins.md
 source_file = _doc/en/_doc/project-security/security-bulletins.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_security-goals]
+[qubes.testt_project-security_security-goals]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security-goals.md
 source_file = _doc/en/_doc/project-security/security-goals.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_xsa]
+[qubes.testt_project-security_xsa]
 file_filter = _qubes-translated/<lang>/_doc/project-security/xsa.md
 source_file = _doc/en/_doc/project-security/xsa.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_security-bulletins-checklist]
+[qubes.testt_project-security_security-bulletins-checklist]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security-bulletins-checklist.md
 source_file = _doc/en/_doc/project-security/security-bulletins-checklist.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_security-pack]
+[qubes.testt_project-security_security-pack]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security-pack.md
 source_file = _doc/en/_doc/project-security/security-pack.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_verifying-signatures]
+[qubes.testt_project-security_verifying-signatures]
 file_filter = _qubes-translated/<lang>/_doc/project-security/verifying-signatures.md
 source_file = _doc/en/_doc/project-security/verifying-signatures.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_project-security_security]
+[qubes.testt_project-security_security]
 file_filter = _qubes-translated/<lang>/_doc/project-security/security.md
 source_file = _doc/en/_doc/project-security/security.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_contributing]
+[qubes.testt_introduction_contributing]
 file_filter = _qubes-translated/<lang>/_doc/introduction/contributing.md
 source_file = _doc/en/_doc/introduction/contributing.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_faq]
+[qubes.testt_introduction_faq]
 file_filter = _qubes-translated/<lang>/_doc/introduction/faq.md
 source_file = _doc/en/_doc/introduction/faq.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_support]
+[qubes.testt_introduction_support]
 file_filter = _qubes-translated/<lang>/_doc/introduction/support.md
 source_file = _doc/en/_doc/introduction/support.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_statistics]
+[qubes.testt_introduction_statistics]
 file_filter = _qubes-translated/<lang>/_doc/introduction/statistics.md
 source_file = _doc/en/_doc/introduction/statistics.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_reporting-bugs]
+[qubes.testt_introduction_reporting-bugs]
 file_filter = _qubes-translated/<lang>/_doc/introduction/reporting-bugs.md
 source_file = _doc/en/_doc/introduction/reporting-bugs.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_experts]
+[qubes.testt_introduction_experts]
 file_filter = _qubes-translated/<lang>/_doc/introduction/experts.md
 source_file = _doc/en/_doc/introduction/experts.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_code-of-conduct]
+[qubes.testt_introduction_code-of-conduct]
 file_filter = _qubes-translated/<lang>/_doc/introduction/code-of-conduct.md
 source_file = _doc/en/_doc/introduction/code-of-conduct.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_screenshots]
+[qubes.testt_introduction_screenshots]
 file_filter = _qubes-translated/<lang>/_doc/introduction/screenshots.md
 source_file = _doc/en/_doc/introduction/screenshots.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_intro]
+[qubes.testt_introduction_intro]
 file_filter = _qubes-translated/<lang>/_doc/introduction/intro.md
 source_file = _doc/en/_doc/introduction/intro.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_network-bridge-support]
+[qubes.testt_external_configuration-guides_network-bridge-support]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/network-bridge-support.md
 source_file = _doc/en/_doc/external/configuration-guides/network-bridge-support.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_mutt]
+[qubes.testt_external_configuration-guides_mutt]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/mutt.md
 source_file = _doc/en/_doc/external/configuration-guides/mutt.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_zfs]
+[qubes.testt_external_configuration-guides_zfs]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/zfs.md
 source_file = _doc/en/_doc/external/configuration-guides/zfs.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_tips-and-tricks]
+[qubes.testt_external_configuration-guides_tips-and-tricks]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/tips-and-tricks.md
 source_file = _doc/en/_doc/external/configuration-guides/tips-and-tricks.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_fetchmail]
+[qubes.testt_external_configuration-guides_fetchmail]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/fetchmail.md
 source_file = _doc/en/_doc/external/configuration-guides/fetchmail.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_disk-trim]
+[qubes.testt_external_configuration-guides_disk-trim]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/disk-trim.md
 source_file = _doc/en/_doc/external/configuration-guides/disk-trim.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_rxvt]
+[qubes.testt_external_configuration-guides_rxvt]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/rxvt.md
 source_file = _doc/en/_doc/external/configuration-guides/rxvt.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_multimedia]
+[qubes.testt_external_configuration-guides_multimedia]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/multimedia.md
 source_file = _doc/en/_doc/external/configuration-guides/multimedia.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_external-audio]
+[qubes.testt_external_configuration-guides_external-audio]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/external-audio.md
 source_file = _doc/en/_doc/external/configuration-guides/external-audio.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_vpn]
+[qubes.testt_external_configuration-guides_vpn]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/vpn.md
 source_file = _doc/en/_doc/external/configuration-guides/vpn.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_postfix]
+[qubes.testt_external_configuration-guides_postfix]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/postfix.md
 source_file = _doc/en/_doc/external/configuration-guides/postfix.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_network-printer]
+[qubes.testt_external_configuration-guides_network-printer]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/network-printer.md
 source_file = _doc/en/_doc/external/configuration-guides/network-printer.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_w3m]
+[qubes.testt_external_configuration-guides_w3m]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/w3m.md
 source_file = _doc/en/_doc/external/configuration-guides/w3m.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_multiboot]
+[qubes.testt_external_configuration-guides_multiboot]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/multiboot.md
 source_file = _doc/en/_doc/external/configuration-guides/multiboot.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_configuration-guides_change-time-zone]
+[qubes.testt_external_configuration-guides_change-time-zone]
 file_filter = _qubes-translated/<lang>/_doc/external/configuration-guides/change-time-zone.md
 source_file = _doc/en/_doc/external/configuration-guides/change-time-zone.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_updating-debian-and-whonix]
+[qubes.testt_external_troubleshooting_updating-debian-and-whonix]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/updating-debian-and-whonix.md
 source_file = _doc/en/_doc/external/troubleshooting/updating-debian-and-whonix.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_macbook-troubleshooting]
+[qubes.testt_external_troubleshooting_macbook-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/macbook-troubleshooting.md
 source_file = _doc/en/_doc/external/troubleshooting/macbook-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_sony-vaio-tinkering]
+[qubes.testt_external_troubleshooting_sony-vaio-tinkering]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/sony-vaio-tinkering.md
 source_file = _doc/en/_doc/external/troubleshooting/sony-vaio-tinkering.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_wireless-troubleshooting]
+[qubes.testt_external_troubleshooting_wireless-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/wireless-troubleshooting.md
 source_file = _doc/en/_doc/external/troubleshooting/wireless-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_intel-igfx-troubleshooting]
+[qubes.testt_external_troubleshooting_intel-igfx-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/intel-igfx-troubleshooting.md
 source_file = _doc/en/_doc/external/troubleshooting/intel-igfx-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_remove-vm-manually]
+[qubes.testt_external_troubleshooting_remove-vm-manually]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/remove-vm-manually.md
 source_file = _doc/en/_doc/external/troubleshooting/remove-vm-manually.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_out-of-memory]
+[qubes.testt_external_troubleshooting_out-of-memory]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/out-of-memory.md
 source_file = _doc/en/_doc/external/troubleshooting/out-of-memory.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_install-nvidia-driver]
+[qubes.testt_external_troubleshooting_install-nvidia-driver]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/install-nvidia-driver.md
 source_file = _doc/en/_doc/external/troubleshooting/install-nvidia-driver.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_nvidia-troubleshooting]
+[qubes.testt_external_troubleshooting_nvidia-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/nvidia-troubleshooting.md
 source_file = _doc/en/_doc/external/troubleshooting/nvidia-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_troubleshooting_thinkpad-troubleshooting]
+[qubes.testt_external_troubleshooting_thinkpad-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/external/troubleshooting/thinkpad-troubleshooting.md
 source_file = _doc/en/_doc/external/troubleshooting/thinkpad-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_building-guides_building-non-fedora-template]
+[qubes.testt_external_building-guides_building-non-fedora-template]
 file_filter = _qubes-translated/<lang>/_doc/external/building-guides/building-non-fedora-template.md
 source_file = _doc/en/_doc/external/building-guides/building-non-fedora-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_building-guides_building-archlinux-template]
+[qubes.testt_external_building-guides_building-archlinux-template]
 file_filter = _qubes-translated/<lang>/_doc/external/building-guides/building-archlinux-template.md
 source_file = _doc/en/_doc/external/building-guides/building-archlinux-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_building-guides_building-whonix-template]
+[qubes.testt_external_building-guides_building-whonix-template]
 file_filter = _qubes-translated/<lang>/_doc/external/building-guides/building-whonix-template.md
 source_file = _doc/en/_doc/external/building-guides/building-whonix-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_security-guides_security-guidelines]
+[qubes.testt_external_security-guides_security-guidelines]
 file_filter = _qubes-translated/<lang>/_doc/external/security-guides/security-guidelines.md
 source_file = _doc/en/_doc/external/security-guides/security-guidelines.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_security-guides_split-bitcoin]
+[qubes.testt_external_security-guides_split-bitcoin]
 file_filter = _qubes-translated/<lang>/_doc/external/security-guides/split-bitcoin.md
 source_file = _doc/en/_doc/external/security-guides/split-bitcoin.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_security-guides_multifactor-authentication]
+[qubes.testt_external_security-guides_multifactor-authentication]
 file_filter = _qubes-translated/<lang>/_doc/external/security-guides/multifactor-authentication.md
 source_file = _doc/en/_doc/external/security-guides/multifactor-authentication.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_customization-guides_fedora-minimal-template-customization]
+[qubes.testt_external_customization-guides_fedora-minimal-template-customization]
 file_filter = _qubes-translated/<lang>/_doc/external/customization-guides/fedora-minimal-template-customization.md
 source_file = _doc/en/_doc/external/customization-guides/fedora-minimal-template-customization.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_customization-guides_dark-theme]
+[qubes.testt_external_customization-guides_dark-theme]
 file_filter = _qubes-translated/<lang>/_doc/external/customization-guides/dark-theme.md
 source_file = _doc/en/_doc/external/customization-guides/dark-theme.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_customization-guides_windows-template-customization]
+[qubes.testt_external_customization-guides_windows-template-customization]
 file_filter = _qubes-translated/<lang>/_doc/external/customization-guides/windows-template-customization.md
 source_file = _doc/en/_doc/external/customization-guides/windows-template-customization.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_customization-guides_removing-templatevm-packages]
+[qubes.testt_external_customization-guides_removing-templatevm-packages]
 file_filter = _qubes-translated/<lang>/_doc/external/customization-guides/removing-templatevm-packages.md
 source_file = _doc/en/_doc/external/customization-guides/removing-templatevm-packages.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_customization-guides_language-localization]
+[qubes.testt_external_customization-guides_language-localization]
 file_filter = _qubes-translated/<lang>/_doc/external/customization-guides/language-localization.md
 source_file = _doc/en/_doc/external/customization-guides/language-localization.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_anonymizing-your-mac-address]
+[qubes.testt_external_privacy-guides_anonymizing-your-mac-address]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/anonymizing-your-mac-address.md
 source_file = _doc/en/_doc/external/privacy-guides/anonymizing-your-mac-address.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_torvm]
+[qubes.testt_external_privacy-guides_torvm]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/torvm.md
 source_file = _doc/en/_doc/external/privacy-guides/torvm.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_martus]
+[qubes.testt_external_privacy-guides_martus]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/martus.md
 source_file = _doc/en/_doc/external/privacy-guides/martus.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_whonix]
+[qubes.testt_external_privacy-guides_whonix]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/whonix.md
 source_file = _doc/en/_doc/external/privacy-guides/whonix.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_signal]
+[qubes.testt_external_privacy-guides_signal]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/signal.md
 source_file = _doc/en/_doc/external/privacy-guides/signal.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_privacy-guides_tails]
+[qubes.testt_external_privacy-guides_tails]
 file_filter = _qubes-translated/<lang>/_doc/external/privacy-guides/tails.md
 source_file = _doc/en/_doc/external/privacy-guides/tails.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_pentesting]
+[qubes.testt_external_os-guides_pentesting]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/pentesting.md
 source_file = _doc/en/_doc/external/os-guides/pentesting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_linux-hvm-tips]
+[qubes.testt_external_os-guides_linux-hvm-tips]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/linux-hvm-tips.md
 source_file = _doc/en/_doc/external/os-guides/linux-hvm-tips.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_ubuntu]
+[qubes.testt_external_os-guides_ubuntu]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/ubuntu.md
 source_file = _doc/en/_doc/external/os-guides/ubuntu.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_netbsd]
+[qubes.testt_external_os-guides_netbsd]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/netbsd.md
 source_file = _doc/en/_doc/external/os-guides/netbsd.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_centos]
+[qubes.testt_external_os-guides_centos]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/centos.md
 source_file = _doc/en/_doc/external/os-guides/centos.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_windows_windows-tools]
+[qubes.testt_external_os-guides_windows_windows-tools]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/windows/windows-tools.md
 source_file = _doc/en/_doc/external/os-guides/windows/windows-tools.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_windows_windows-vm]
+[qubes.testt_external_os-guides_windows_windows-vm]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/windows/windows-vm.md
 source_file = _doc/en/_doc/external/os-guides/windows/windows-vm.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_pentesting_kali]
+[qubes.testt_external_os-guides_pentesting_kali]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/pentesting/kali.md
 source_file = _doc/en/_doc/external/os-guides/pentesting/kali.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_pentesting_ptf]
+[qubes.testt_external_os-guides_pentesting_ptf]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/pentesting/ptf.md
 source_file = _doc/en/_doc/external/os-guides/pentesting/ptf.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_external_os-guides_pentesting_blackarch]
+[qubes.testt_external_os-guides_pentesting_blackarch]
 file_filter = _qubes-translated/<lang>/_doc/external/os-guides/pentesting/blackarch.md
 source_file = _doc/en/_doc/external/os-guides/pentesting/blackarch.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_hardware_hardware-testing]
+[qubes.testt_user_hardware_hardware-testing]
 file_filter = _qubes-translated/<lang>/_doc/user/hardware/hardware-testing.md
 source_file = _doc/en/_doc/user/hardware/hardware-testing.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user__hardware_hcl_md]
+[qubes.testt_user_hardware_hcl]
 file_filter = _qubes-translated/<lang>/_doc/user/hardware/hcl.md
 source_file = _doc/en/_doc/user/hardware/hcl.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_hardware_certified-hardware]
+[qubes.testt_user_hardware_certified-hardware]
 file_filter = _qubes-translated/<lang>/_doc/user/hardware/certified-hardware.md
 source_file = _doc/en/_doc/user/hardware/certified-hardware.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_hardware_system-requirements]
+[qubes.testt_user_hardware_system-requirements]
 file_filter = _qubes-translated/<lang>/_doc/user/hardware/system-requirements.md
 source_file = _doc/en/_doc/user/hardware/system-requirements.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_copying-files]
+[qubes.testt_user_common-tasks_copying-files]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/copying-files.md
 source_file = _doc/en/_doc/user/common-tasks/copying-files.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_pci-devices]
+[qubes.testt_user_common-tasks_pci-devices]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/pci-devices.md
 source_file = _doc/en/_doc/user/common-tasks/pci-devices.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_updating-qubes-os]
+[qubes.testt_user_common-tasks_updating-qubes-os]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/updating-qubes-os.md
 source_file = _doc/en/_doc/user/common-tasks/updating-qubes-os.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_managing-appvm-shortcuts]
+[qubes.testt_user_common-tasks_managing-appvm-shortcuts]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/managing-appvm-shortcuts.md
 source_file = _doc/en/_doc/user/common-tasks/managing-appvm-shortcuts.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_software-update-dom0]
+[qubes.testt_user_common-tasks_software-update-dom0]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/software-update-dom0.md
 source_file = _doc/en/_doc/user/common-tasks/software-update-dom0.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_usb-devices]
+[qubes.testt_user_common-tasks_usb-devices]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/usb-devices.md
 source_file = _doc/en/_doc/user/common-tasks/usb-devices.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_software-update-domu]
+[qubes.testt_user_common-tasks_software-update-domu]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/software-update-domu.md
 source_file = _doc/en/_doc/user/common-tasks/software-update-domu.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_backup-restore]
+[qubes.testt_user_common-tasks_backup-restore]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/backup-restore.md
 source_file = _doc/en/_doc/user/common-tasks/backup-restore.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_backup-emergency-restore-v2]
+[qubes.testt_user_common-tasks_backup-emergency-restore-v2]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/backup-emergency-restore-v2.md
 source_file = _doc/en/_doc/user/common-tasks/backup-emergency-restore-v2.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_device-handling]
+[qubes.testt_user_common-tasks_device-handling]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/device-handling.md
 source_file = _doc/en/_doc/user/common-tasks/device-handling.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_optical-discs]
+[qubes.testt_user_common-tasks_optical-discs]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/optical-discs.md
 source_file = _doc/en/_doc/user/common-tasks/optical-discs.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_disposablevm]
+[qubes.testt_user_common-tasks_disposablevm]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/disposablevm.md
 source_file = _doc/en/_doc/user/common-tasks/disposablevm.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_copy-from-dom0]
+[qubes.testt_user_common-tasks_copy-from-dom0]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/copy-from-dom0.md
 source_file = _doc/en/_doc/user/common-tasks/copy-from-dom0.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_backup-emergency-restore-v4]
+[qubes.testt_user_common-tasks_backup-emergency-restore-v4]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/backup-emergency-restore-v4.md
 source_file = _doc/en/_doc/user/common-tasks/backup-emergency-restore-v4.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_block-devices]
+[qubes.testt_user_common-tasks_block-devices]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/block-devices.md
 source_file = _doc/en/_doc/user/common-tasks/block-devices.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_backup-emergency-restore-v3]
+[qubes.testt_user_common-tasks_backup-emergency-restore-v3]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/backup-emergency-restore-v3.md
 source_file = _doc/en/_doc/user/common-tasks/backup-emergency-restore-v3.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_full-screen-mode]
+[qubes.testt_user_common-tasks_full-screen-mode]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/full-screen-mode.md
 source_file = _doc/en/_doc/user/common-tasks/full-screen-mode.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_getting-started]
+[qubes.testt_user_common-tasks_getting-started]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/getting-started.md
 source_file = _doc/en/_doc/user/common-tasks/getting-started.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_common-tasks_copy-paste]
+[qubes.testt_user_common-tasks_copy-paste]
 file_filter = _qubes-translated/<lang>/_doc/user/common-tasks/copy-paste.md
 source_file = _doc/en/_doc/user/common-tasks/copy-paste.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_reference_research]
+[qubes.testt_user_reference_research]
 file_filter = _qubes-translated/<lang>/_doc/user/reference/research.md
 source_file = _doc/en/_doc/user/reference/research.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_reference_tools]
+[qubes.testt_user_reference_tools]
 file_filter = _qubes-translated/<lang>/_doc/user/reference/tools.md
 source_file = _doc/en/_doc/user/reference/tools.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_reference_qubes-service]
+[qubes.testt_user_reference_qubes-service]
 file_filter = _qubes-translated/<lang>/_doc/user/reference/qubes-service.md
 source_file = _doc/en/_doc/user/reference/qubes-service.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_reference_glossary]
+[qubes.testt_user_reference_glossary]
 file_filter = _qubes-translated/<lang>/_doc/user/reference/glossary.md
 source_file = _doc/en/_doc/user/reference/glossary.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_templates]
+[qubes.testt_user_managing-os_templates]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/templates.md
 source_file = _doc/en/_doc/user/managing-os/templates.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_standalone-and-hvm]
+[qubes.testt_user_managing-os_standalone-and-hvm]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/standalone-and-hvm.md
 source_file = _doc/en/_doc/user/managing-os/standalone-and-hvm.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_windows]
+[qubes.testt_user_managing-os_windows]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/windows.md
 source_file = _doc/en/_doc/user/managing-os/windows.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_minimal-templates]
+[qubes.testt_user_managing-os_minimal-templates]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/minimal-templates.md
 source_file = _doc/en/_doc/user/managing-os/minimal-templates.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_reinstall-template]
+[qubes.testt_user_managing-os_reinstall-template]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/reinstall-template.md
 source_file = _doc/en/_doc/user/managing-os/reinstall-template.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_fedora_fedora-xfce]
+[qubes.testt_user_managing-os_fedora_fedora-xfce]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/fedora/fedora-xfce.md
 source_file = _doc/en/_doc/user/managing-os/fedora/fedora-xfce.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_fedora_fedora-upgrade]
+[qubes.testt_user_managing-os_fedora_fedora-upgrade]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/fedora/fedora-upgrade.md
 source_file = _doc/en/_doc/user/managing-os/fedora/fedora-upgrade.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_fedora_fedora]
+[qubes.testt_user_managing-os_fedora_fedora]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/fedora/fedora.md
 source_file = _doc/en/_doc/user/managing-os/fedora/fedora.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_debian_debian]
+[qubes.testt_user_managing-os_debian_debian]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/debian/debian.md
 source_file = _doc/en/_doc/user/managing-os/debian/debian.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_managing-os_debian_debian-upgrade]
+[qubes.testt_user_managing-os_debian_debian-upgrade]
 file_filter = _qubes-translated/<lang>/_doc/user/managing-os/debian/debian-upgrade.md
 source_file = _doc/en/_doc/user/managing-os/debian/debian-upgrade.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_download-mirrors]
+[qubes.testt_user_downloading-installing-upgrading_download-mirrors]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/download-mirrors.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/download-mirrors.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_live-usb]
+[qubes.testt_user_downloading-installing-upgrading_live-usb]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/live-usb.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/live-usb.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_custom-install]
+[qubes.testt_user_downloading-installing-upgrading_custom-install]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/custom-install.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/custom-install.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_install-security]
+[qubes.testt_user_downloading-installing-upgrading_install-security]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/install-security.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/install-security.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_installation-guide]
+[qubes.testt_user_downloading-installing-upgrading_installation-guide]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/installation-guide.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/installation-guide.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_testing]
+[qubes.testt_user_downloading-installing-upgrading_testing]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/testing.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/testing.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_version-scheme]
+[qubes.testt_user_downloading-installing-upgrading_version-scheme]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/version-scheme.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/version-scheme.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_supported-versions]
+[qubes.testt_user_downloading-installing-upgrading_supported-versions]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/supported-versions.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/supported-versions.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b1]
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b1]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b1.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b1.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r30]
-file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.0.md
-source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.0.md
-source_lang = en
-type = GITHUBMARKDOWN
-
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r31]
-file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.1.md
-source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.1.md
-source_lang = en
-type = GITHUBMARKDOWN
-
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r32]
-file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.2.md
-source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3.2.md
-source_lang = en
-type = GITHUBMARKDOWN
-
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b2]
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b2]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b2.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b2.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b3]
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r2b3]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b3.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2b3.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r4]
-file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r4.0.md
-source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r4.0.md
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_2]
+file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_2.md
+source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_2.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade-to-r2]
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_1]
+file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_1.md
+source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_1.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r4_0]
+file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r4_0.md
+source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r4_0.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r3_0]
+file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_0.md
+source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r3_0.md
+source_lang = en
+type = GITHUBMARKDOWN
+
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade-to-r2]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade-to-r2.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_downloading-installing-upgrading_upgrade_upgrade]
+[qubes.testt_user_downloading-installing-upgrading_upgrade_upgrade]
 file_filter = _qubes-translated/<lang>/_doc/user/downloading-installing-upgrading/upgrade/upgrade.md
 source_file = _doc/en/_doc/user/downloading-installing-upgrading/upgrade/upgrade.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_anti-evil-maid]
+[qubes.testt_user_security-in-qubes_anti-evil-maid]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/anti-evil-maid.md
 source_file = _doc/en/_doc/user/security-in-qubes/anti-evil-maid.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_device-handling-security]
+[qubes.testt_user_security-in-qubes_device-handling-security]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/device-handling-security.md
 source_file = _doc/en/_doc/user/security-in-qubes/device-handling-security.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_firewall]
+[qubes.testt_user_security-in-qubes_firewall]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/firewall.md
 source_file = _doc/en/_doc/user/security-in-qubes/firewall.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_split-gpg]
+[qubes.testt_user_security-in-qubes_split-gpg]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/split-gpg.md
 source_file = _doc/en/_doc/user/security-in-qubes/split-gpg.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_yubi-key]
+[qubes.testt_user_security-in-qubes_yubi-key]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/yubi-key.md
 source_file = _doc/en/_doc/user/security-in-qubes/yubi-key.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_vm-sudo]
+[qubes.testt_user_security-in-qubes_vm-sudo]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/vm-sudo.md
 source_file = _doc/en/_doc/user/security-in-qubes/vm-sudo.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_u2f-proxy]
+[qubes.testt_user_security-in-qubes_u2f-proxy]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/u2f-proxy.md
 source_file = _doc/en/_doc/user/security-in-qubes/u2f-proxy.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_security-in-qubes_data-leaks]
+[qubes.testt_user_security-in-qubes_data-leaks]
 file_filter = _qubes-translated/<lang>/_doc/user/security-in-qubes/data-leaks.md
 source_file = _doc/en/_doc/user/security-in-qubes/data-leaks.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_kde]
+[qubes.testt_user_advanced-configuration_kde]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/kde.md
 source_file = _doc/en/_doc/user/advanced-configuration/kde.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_salt]
+[qubes.testt_user_advanced-configuration_salt]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/salt.md
 source_file = _doc/en/_doc/user/advanced-configuration/salt.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_managing-vm-kernel]
+[qubes.testt_user_advanced-configuration_managing-vm-kernel]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/managing-vm-kernel.md
 source_file = _doc/en/_doc/user/advanced-configuration/managing-vm-kernel.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_i3]
+[qubes.testt_user_advanced-configuration_i3]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/i3.md
 source_file = _doc/en/_doc/user/advanced-configuration/i3.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_uefi-troubleshooting]
+[qubes.testt_user_advanced-configuration_uefi-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/uefi-troubleshooting.md
 source_file = _doc/en/_doc/user/advanced-configuration/uefi-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_awesome]
+[qubes.testt_user_advanced-configuration_awesome]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/awesome.md
 source_file = _doc/en/_doc/user/advanced-configuration/awesome.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_gui-configuration]
+[qubes.testt_user_advanced-configuration_gui-configuration]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/gui-configuration.md
 source_file = _doc/en/_doc/user/advanced-configuration/gui-configuration.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_bind-dirs]
+[qubes.testt_user_advanced-configuration_bind-dirs]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/bind-dirs.md
 source_file = _doc/en/_doc/user/advanced-configuration/bind-dirs.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_rpc-policy]
+[qubes.testt_user_advanced-configuration_rpc-policy]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/rpc-policy.md
 source_file = _doc/en/_doc/user/advanced-configuration/rpc-policy.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_newer-hardware-troubleshooting]
+[qubes.testt_user_advanced-configuration_newer-hardware-troubleshooting]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/newer-hardware-troubleshooting.md
 source_file = _doc/en/_doc/user/advanced-configuration/newer-hardware-troubleshooting.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_usb-qubes]
+[qubes.testt_user_advanced-configuration_usb-qubes]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/usb-qubes.md
 source_file = _doc/en/_doc/user/advanced-configuration/usb-qubes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_secondary-storage]
+[qubes.testt_user_advanced-configuration_secondary-storage]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/secondary-storage.md
 source_file = _doc/en/_doc/user/advanced-configuration/secondary-storage.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_mount-from-other-os]
+[qubes.testt_user_advanced-configuration_mount-from-other-os]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/mount-from-other-os.md
 source_file = _doc/en/_doc/user/advanced-configuration/mount-from-other-os.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_config-files]
+[qubes.testt_user_advanced-configuration_config-files]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/config-files.md
 source_file = _doc/en/_doc/user/advanced-configuration/config-files.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_disposablevm-customization]
+[qubes.testt_user_advanced-configuration_disposablevm-customization]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/disposablevm-customization.md
 source_file = _doc/en/_doc/user/advanced-configuration/disposablevm-customization.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_user_advanced-configuration_resize-disk-image]
+[qubes.testt_user_advanced-configuration_resize-disk-image]
 file_filter = _qubes-translated/<lang>/_doc/user/advanced-configuration/resize-disk-image.md
 source_file = _doc/en/_doc/user/advanced-configuration/resize-disk-image.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_test-bench]
+[qubes.testt_developer_debugging_test-bench]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/test-bench.md
 source_file = _doc/en/_doc/developer/debugging/test-bench.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_automated-tests]
+[qubes.testt_developer_debugging_automated-tests]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/automated-tests.md
 source_file = _doc/en/_doc/developer/debugging/automated-tests.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_profiling]
+[qubes.testt_developer_debugging_profiling]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/profiling.md
 source_file = _doc/en/_doc/developer/debugging/profiling.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_mount-lvm-image]
+[qubes.testt_developer_debugging_mount-lvm-image]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/mount-lvm-image.md
 source_file = _doc/en/_doc/developer/debugging/mount-lvm-image.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_windows-debugging]
+[qubes.testt_developer_debugging_windows-debugging]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/windows-debugging.md
 source_file = _doc/en/_doc/developer/debugging/windows-debugging.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_safe-remote-ttys]
+[qubes.testt_developer_debugging_safe-remote-ttys]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/safe-remote-ttys.md
 source_file = _doc/en/_doc/developer/debugging/safe-remote-ttys.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_debugging_vm-interface]
+[qubes.testt_developer_debugging_vm-interface]
 file_filter = _qubes-translated/<lang>/_doc/developer/debugging/vm-interface.md
 source_file = _doc/en/_doc/developer/debugging/vm-interface.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_template-implementation]
+[qubes.testt_developer_system_template-implementation]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/template-implementation.md
 source_file = _doc/en/_doc/developer/system/template-implementation.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_security-critical-code]
+[qubes.testt_developer_system_security-critical-code]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/security-critical-code.md
 source_file = _doc/en/_doc/developer/system/security-critical-code.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_architecture]
+[qubes.testt_developer_system_architecture]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/architecture.md
 source_file = _doc/en/_doc/developer/system/architecture.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_system-doc]
+[qubes.testt_developer_system_system-doc]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/system-doc.md
 source_file = _doc/en/_doc/developer/system/system-doc.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_audio]
+[qubes.testt_developer_system_audio]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/audio.md
 source_file = _doc/en/_doc/developer/system/audio.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_networking]
+[qubes.testt_developer_system_networking]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/networking.md
 source_file = _doc/en/_doc/developer/system/networking.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_gui]
+[qubes.testt_developer_system_gui]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/gui.md
 source_file = _doc/en/_doc/developer/system/gui.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_system_storage-pools]
+[qubes.testt_developer_system_storage-pools]
 file_filter = _qubes-translated/<lang>/_doc/developer/system/storage-pools.md
 source_file = _doc/en/_doc/developer/system/storage-pools.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_join]
+[qubes.testt_developer_general_join]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/join.md
 source_file = _doc/en/_doc/developer/general/join.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_package-contributions]
+[qubes.testt_developer_general_package-contributions]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/package-contributions.md
 source_file = _doc/en/_doc/developer/general/package-contributions.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_devel-books]
+[qubes.testt_developer_general_devel-books]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/devel-books.md
 source_file = _doc/en/_doc/developer/general/devel-books.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_style-guide]
+[qubes.testt_developer_general_style-guide]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/style-guide.md
 source_file = _doc/en/_doc/developer/general/style-guide.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_gsod]
+[qubes.testt_developer_general_gsod]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/gsod.md
 source_file = _doc/en/_doc/developer/general/gsod.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_doc-guidelines]
+[qubes.testt_developer_general_doc-guidelines]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/doc-guidelines.md
 source_file = _doc/en/_doc/developer/general/doc-guidelines.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_usability-ux]
+[qubes.testt_developer_general_usability-ux]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/usability-ux.md
 source_file = _doc/en/_doc/developer/general/usability-ux.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_general_gsoc]
+[qubes.testt_developer_general_gsoc]
 file_filter = _qubes-translated/<lang>/_doc/developer/general/gsoc.md
 source_file = _doc/en/_doc/developer/general/gsoc.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_dvm-impl]
+[qubes.testt_developer_services_dvm-impl]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/dvm-impl.md
 source_file = _doc/en/_doc/developer/services/dvm-impl.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qrexec]
+[qubes.testt_developer_services_qrexec]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qrexec.md
 source_file = _doc/en/_doc/developer/services/qrexec.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qmemman]
+[qubes.testt_developer_services_qmemman]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qmemman.md
 source_file = _doc/en/_doc/developer/services/qmemman.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_admin-api]
+[qubes.testt_developer_services_admin-api]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/admin-api.md
 source_file = _doc/en/_doc/developer/services/admin-api.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qfileexchgd]
+[qubes.testt_developer_services_qfileexchgd]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qfileexchgd.md
 source_file = _doc/en/_doc/developer/services/qfileexchgd.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_dom0-secure-updates]
+[qubes.testt_developer_services_dom0-secure-updates]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/dom0-secure-updates.md
 source_file = _doc/en/_doc/developer/services/dom0-secure-updates.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qrexec2]
+[qubes.testt_developer_services_qrexec2]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qrexec2.md
 source_file = _doc/en/_doc/developer/services/qrexec2.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qrexec-internals]
+[qubes.testt_developer_services_qrexec-internals]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qrexec-internals.md
 source_file = _doc/en/_doc/developer/services/qrexec-internals.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_services_qfilecopy]
+[qubes.testt_developer_services_qfilecopy]
 file_filter = _qubes-translated/<lang>/_doc/developer/services/qfilecopy.md
 source_file = _doc/en/_doc/developer/services/qfilecopy.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_schedules]
+[qubes.testt_developer_releases_schedules]
 file_filter = _qubes-translated/<lang>/_doc/developer/releases/schedules.md
 source_file = _doc/en/_doc/developer/releases/schedules.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_notes]
+[qubes.testt_developer_releases_notes]
 file_filter = _qubes-translated/<lang>/_doc/developer/releases/notes.md
 source_file = _doc/en/_doc/developer/releases/notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_todo]
+[qubes.testt_developer_releases_todo]
 file_filter = _qubes-translated/<lang>/_doc/developer/releases/todo.md
 source_file = _doc/en/_doc/developer/releases/todo.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_4_r]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/4.0/release-notes.md
-source_file = _doc/en/_doc/developer/releases/4.0/release-notes.md
+[qubes.testt_developer_releases_3_2_schedule]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_2/schedule.md
+source_file = _doc/en/_doc/developer/releases/3_2/schedule.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_4_s]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/4.0/schedule.md
-source_file = _doc/en/_doc/developer/releases/4.0/schedule.md
+[qubes.testt_developer_releases_3_2_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_2/release-notes.md
+source_file = _doc/en/_doc/developer/releases/3_2/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_0_s]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.0/schedule.md
-source_file = _doc/en/_doc/developer/releases/3.0/schedule.md
+[qubes.testt_developer_releases_2_0_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/2_0/release-notes.md
+source_file = _doc/en/_doc/developer/releases/2_0/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_0_r]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.0/release-notes.md
-source_file = _doc/en/_doc/developer/releases/3.0/release-notes.md
+[qubes.testt_developer_releases_3_1_schedule]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_1/schedule.md
+source_file = _doc/en/_doc/developer/releases/3_1/schedule.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_1_s]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.1/schedule.md
-source_file = _doc/en/_doc/developer/releases/3.1/schedule.md
+[qubes.testt_developer_releases_3_1_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_1/release-notes.md
+source_file = _doc/en/_doc/developer/releases/3_1/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_1_r]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.1/release-notes.md
-source_file = _doc/en/_doc/developer/releases/3.1/release-notes.md
+[qubes.testt_developer_releases_1_0_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/1_0/release-notes.md
+source_file = _doc/en/_doc/developer/releases/1_0/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_2_s]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.2/schedule.md
-source_file = _doc/en/_doc/developer/releases/3.2/schedule.md
+[qubes.testt_developer_releases_4_0_schedule]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/4_0/schedule.md
+source_file = _doc/en/_doc/developer/releases/4_0/schedule.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_3_2_r]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/3.2/release-notes.md
-source_file = _doc/en/_doc/developer/releases/3.2/release-notes.md
+[qubes.testt_developer_releases_4_0_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/4_0/release-notes.md
+source_file = _doc/en/_doc/developer/releases/4_0/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_2]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/2.0/release-notes.md
-source_file = _doc/en/_doc/developer/releases/2.0/release-notes.md
+[qubes.testt_developer_releases_3_0_schedule]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_0/schedule.md
+source_file = _doc/en/_doc/developer/releases/3_0/schedule.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_releases_1]
-file_filter = _qubes-translated/<lang>/_doc/developer/releases/1.0/release-notes.md
-source_file = _doc/en/_doc/developer/releases/1.0/release-notes.md
+[qubes.testt_developer_releases_3_0_release-notes]
+file_filter = _qubes-translated/<lang>/_doc/developer/releases/3_0/release-notes.md
+source_file = _doc/en/_doc/developer/releases/3_0/release-notes.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_building_qubes-iso-building]
+[qubes.testt_developer_building_qubes-iso-building]
 file_filter = _qubes-translated/<lang>/_doc/developer/building/qubes-iso-building.md
 source_file = _doc/en/_doc/developer/building/qubes-iso-building.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_building_qubes-builder-details]
+[qubes.testt_developer_building_qubes-builder-details]
 file_filter = _qubes-translated/<lang>/_doc/developer/building/qubes-builder-details.md
 source_file = _doc/en/_doc/developer/building/qubes-builder-details.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_building_qubes-builder]
+[qubes.testt_developer_building_qubes-builder]
 file_filter = _qubes-translated/<lang>/_doc/developer/building/qubes-builder.md
 source_file = _doc/en/_doc/developer/building/qubes-builder.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_building_development-workflow]
+[qubes.testt_developer_building_development-workflow]
 file_filter = _qubes-translated/<lang>/_doc/developer/building/development-workflow.md
 source_file = _doc/en/_doc/developer/building/development-workflow.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_code_coding-style]
+[qubes.testt_developer_code_coding-style]
 file_filter = _qubes-translated/<lang>/_doc/developer/code/coding-style.md
 source_file = _doc/en/_doc/developer/code/coding-style.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_code_license]
+[qubes.testt_developer_code_license]
 file_filter = _qubes-translated/<lang>/_doc/developer/code/license.md
 source_file = _doc/en/_doc/developer/code/license.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_code_code-signing]
+[qubes.testt_developer_code_code-signing]
 file_filter = _qubes-translated/<lang>/_doc/developer/code/code-signing.md
 source_file = _doc/en/_doc/developer/code/code-signing.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_developer_code_source-code]
+[qubes.testt_developer_code_source-code]
 file_filter = _qubes-translated/<lang>/_doc/developer/code/source-code.md
 source_file = _doc/en/_doc/developer/code/source-code.md
 source_lang = en
 type = GITHUBMARKDOWN
 
-[qubes.test_doc_introduction_video-tours]
+[qubes.testt_introduction_video-tours]
 file_filter = _qubes-translated/<lang>/_doc/introduction/video-tours.html
 source_file = _doc/en/_doc/introduction/video-tours.html
 source_lang = en
 type = HTML
 
-[qubes.test_doc_user_hardware_hcl]
-file_filter = _qubes-translated/<lang>/_doc/user/hardware/hcl.html
-source_file = _doc/en/_doc/user/hardware/hcl.html
+[qubes.testt_user_hardware_hcl_]
+file_filter = _qubes-translated/<lang>/_doc/user/hardware/hcl_.html
+source_file = _doc/en/_doc/user/hardware/hcl_.html
 source_lang = en
 type = HTML
 
