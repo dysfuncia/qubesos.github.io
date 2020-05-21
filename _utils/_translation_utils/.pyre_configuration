@@ -1,0 +1,8 @@
+{
+  "binary": "/home/user/.local/bin/pyre.bin",
+  "source_directories": [
+    "."
+  ],
+  "taint_models_path": "/home/user/.local/lib/pyre_check/taint/",
+  "typeshed": "/home/user/.local/lib/pyre_check/typeshed/"
+}

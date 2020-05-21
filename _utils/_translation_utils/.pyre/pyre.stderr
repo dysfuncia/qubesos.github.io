@@ -1,0 +1,614 @@
+2020-03-07 18:40:02,671 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils`
+2020-03-07 18:40:02,675 DEBUG Registering process with pid 10685 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-10685.pid`
+2020-03-07 18:40:02,713 PERFORMANCE Module tracker built: 0.022074s
+2020-03-07 18:40:02,814 INFO Parsing 835 stubs and sources...
+2020-03-07 18:40:03,955 ERROR Could not parse file at 66:8-66:8
+      else:
+         ^
+
+2020-03-07 18:40:04,639 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 18:40:04,640 PERFORMANCE Sources parsed: 1.926844s
+2020-03-07 18:40:04,740 INFO Building type environment...
+2020-03-07 18:40:05,206 INFO Updating is from empty stub result Environment
+2020-03-07 18:40:05,207 INFO Updating Alias Environment
+2020-03-07 18:40:05,207 INFO Updating Edges Environment
+2020-03-07 18:40:05,207 INFO Updating Undecorated functions Environment
+2020-03-07 18:40:05,208 INFO Updating Class metadata Environment
+2020-03-07 18:40:05,208 INFO Updating parse annotation Environment
+2020-03-07 18:40:05,208 INFO Updating attributes Environment
+2020-03-07 18:40:05,209 INFO Updating Global Environment
+2020-03-07 18:40:05,309 PERFORMANCE Full environment built: 0.567378s
+2020-03-07 18:40:05,429 INFO Checking 6 functions...
+2020-03-07 18:40:05,429 INFO Processed 6 of 6 functions
+2020-03-07 18:40:05,430 PERFORMANCE Check_TypeCheck: 0.069439s
+2020-03-07 18:40:05,430 MEMORY Shared memory size post-typecheck (size: 12)
+2020-03-07 18:40:05,473 INFO Postprocessing 834 sources...
+2020-03-07 18:40:05,522 INFO Postprocessed 209 of 834 sources
+2020-03-07 18:40:05,569 INFO Postprocessed 418 of 834 sources
+2020-03-07 18:40:05,619 INFO Postprocessed 627 of 834 sources
+2020-03-07 18:40:05,622 INFO Postprocessed 834 of 834 sources
+2020-03-07 18:40:05,626 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-10685.pid`
+2020-03-07 18:40:05,640 PERFORMANCE Check: 2.932139s
+2020-03-07 18:40:05,641 ERROR Found 2 type errors!
+
+2020-03-07 18:40:48,926 INFO Constructing shared directory `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/shared_analysis_directory_10768`
+2020-03-07 18:40:48,927 ERROR No targets or source directories to analyze.
+
+2020-03-07 18:55:23,043 INFO Binary found at `/home/user/.local/bin/pyre.bin`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre_check/typeshed/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/pyre_check/typeshed/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/typeshed/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/pyre_check/typeshed/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/pyre_check/typeshed/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre_check/taint/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/pyre_check/taint/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/site-packages/pyre_check/taint/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/python3.7/pyre_check/taint/`
+2020-03-07 18:55:23,044 DEBUG Trying with: `/home/user/.local/lib/pyre_check/taint/`
+2020-03-07 18:55:23,045 PROMPT Which directory should pyre be initialized in? (Default: `.`): 
+2020-03-07 18:55:24,157 INFO Successfully initialized pyre! You can view the configuration at `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre_configuration`.
+2020-03-07 18:55:28,737 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 18:55:28,754 DEBUG Registering process with pid 11096 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11096.pid`
+2020-03-07 18:55:28,854 PERFORMANCE Module tracker built: 0.080830s
+2020-03-07 18:55:28,958 INFO Parsing 835 stubs and sources...
+2020-03-07 18:55:30,340 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 18:55:31,085 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 18:55:31,085 PERFORMANCE Sources parsed: 2.235724s
+2020-03-07 18:55:31,186 INFO Building type environment...
+2020-03-07 18:55:31,692 INFO Updating is from empty stub result Environment
+2020-03-07 18:55:31,692 INFO Updating Alias Environment
+2020-03-07 18:55:31,692 INFO Updating Edges Environment
+2020-03-07 18:55:31,692 INFO Updating Undecorated functions Environment
+2020-03-07 18:55:31,693 INFO Updating Class metadata Environment
+2020-03-07 18:55:31,693 INFO Updating parse annotation Environment
+2020-03-07 18:55:31,693 INFO Updating attributes Environment
+2020-03-07 18:55:31,693 INFO Updating Global Environment
+2020-03-07 18:55:31,794 PERFORMANCE Full environment built: 0.604412s
+2020-03-07 18:55:31,925 INFO Checking 6 functions...
+2020-03-07 18:55:31,934 INFO Processed 6 of 6 functions
+2020-03-07 18:55:31,934 PERFORMANCE Check_TypeCheck: 0.081295s
+2020-03-07 18:55:31,952 MEMORY Shared memory size post-typecheck (size: 12)
+2020-03-07 18:55:32,042 INFO Postprocessing 834 sources...
+2020-03-07 18:55:32,135 INFO Postprocessed 209 of 834 sources
+2020-03-07 18:55:32,185 INFO Postprocessed 418 of 834 sources
+2020-03-07 18:55:32,236 INFO Postprocessed 627 of 834 sources
+2020-03-07 18:55:32,242 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11096.pid`
+2020-03-07 18:55:32,264 ERROR Found 2 type errors!
+
+2020-03-07 18:56:00,168 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 18:56:00,188 DEBUG Registering process with pid 11160 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11160.pid`
+2020-03-07 18:56:00,300 PERFORMANCE Module tracker built: 0.100586s
+2020-03-07 18:56:00,407 INFO Parsing 2533 stubs and sources...
+2020-03-07 18:56:03,249 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 18:56:18,427 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11160.pid`
+2020-03-07 18:56:18,443 WARNING Interrupted by user
+
+2020-03-07 18:56:18,444 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 18:59:37,350 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 18:59:37,354 DEBUG Registering process with pid 11234 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11234.pid`
+2020-03-07 18:59:37,440 PERFORMANCE Module tracker built: 0.070775s
+2020-03-07 18:59:37,541 INFO Parsing 2533 stubs and sources...
+2020-03-07 18:59:40,056 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 18:59:54,035 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 18:59:54,036 PERFORMANCE Sources parsed: 16.595246s
+2020-03-07 18:59:54,136 INFO Building type environment...
+2020-03-07 18:59:55,920 INFO Updating is from empty stub result Environment
+2020-03-07 18:59:55,921 INFO Updating Alias Environment
+2020-03-07 18:59:55,921 INFO Updating Edges Environment
+2020-03-07 18:59:55,921 INFO Updating Undecorated functions Environment
+2020-03-07 18:59:55,922 INFO Updating Class metadata Environment
+2020-03-07 18:59:55,922 INFO Updating parse annotation Environment
+2020-03-07 18:59:55,922 INFO Updating attributes Environment
+2020-03-07 18:59:55,923 INFO Updating Global Environment
+2020-03-07 18:59:56,023 PERFORMANCE Full environment built: 1.885186s
+2020-03-07 18:59:56,154 INFO Checking 6 functions...
+2020-03-07 18:59:56,155 INFO Processed 6 of 6 functions
+2020-03-07 18:59:56,155 PERFORMANCE Check_TypeCheck: 0.063820s
+2020-03-07 18:59:56,156 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 18:59:56,256 INFO Postprocessing 2532 sources...
+2020-03-07 18:59:56,344 INFO Postprocessed 231 of 2532 sources
+2020-03-07 18:59:56,399 INFO Postprocessed 462 of 2532 sources
+2020-03-07 18:59:56,479 INFO Postprocessed 693 of 2532 sources
+2020-03-07 18:59:56,561 INFO Postprocessed 924 of 2532 sources
+2020-03-07 18:59:56,662 INFO Postprocessed 1155 of 2532 sources
+2020-03-07 18:59:56,827 INFO Postprocessed 1386 of 2532 sources
+2020-03-07 18:59:56,960 INFO Postprocessed 1617 of 2532 sources
+2020-03-07 18:59:57,061 INFO Postprocessed 1848 of 2532 sources
+2020-03-07 18:59:57,126 INFO Postprocessed 2079 of 2532 sources
+2020-03-07 18:59:57,207 INFO Postprocessed 2310 of 2532 sources
+2020-03-07 18:59:57,211 INFO Postprocessed 2532 of 2532 sources
+2020-03-07 18:59:57,217 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11234.pid`
+2020-03-07 18:59:57,249 PERFORMANCE Check: 19.842895s
+2020-03-07 18:59:57,249 SUCCESS No type errors found
+
+2020-03-07 19:05:33,923 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:05:33,927 DEBUG Registering process with pid 11415 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11415.pid`
+2020-03-07 19:05:34,022 PERFORMANCE Module tracker built: 0.077839s
+2020-03-07 19:05:34,123 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:05:35,079 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:05:36,638 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:05:43,908 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11415.pid`
+2020-03-07 19:05:43,912 WARNING Interrupted by user
+
+2020-03-07 19:05:43,913 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:06:02,790 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:06:02,794 DEBUG Registering process with pid 11443 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11443.pid`
+2020-03-07 19:06:02,888 PERFORMANCE Module tracker built: 0.077599s
+2020-03-07 19:06:02,988 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:06:03,945 ERROR Could not parse file at 263:84-263:84
+                  logger.error('problem opening a file in the translated dir: %s' %s e.filename)
+                                                                                     ^
+
+2020-03-07 19:06:05,492 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:06:08,991 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11443.pid`
+2020-03-07 19:06:08,991 WARNING Interrupted by user
+
+2020-03-07 19:06:08,992 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:06:44,803 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:06:44,807 DEBUG Registering process with pid 11469 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11469.pid`
+2020-03-07 19:06:44,928 PERFORMANCE Module tracker built: 0.104985s
+2020-03-07 19:06:45,029 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:06:47,552 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:06:50,500 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11469.pid`
+2020-03-07 19:06:50,503 WARNING Interrupted by user
+
+2020-03-07 19:06:50,504 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:07:04,911 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:07:04,915 DEBUG Registering process with pid 11494 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11494.pid`
+2020-03-07 19:07:05,009 PERFORMANCE Module tracker built: 0.077837s
+2020-03-07 19:07:05,110 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:07:07,628 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:07:09,971 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11494.pid`
+2020-03-07 19:07:09,971 WARNING Interrupted by user
+
+2020-03-07 19:07:09,972 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:07:45,135 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:07:45,139 DEBUG Registering process with pid 11519 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11519.pid`
+2020-03-07 19:07:45,236 PERFORMANCE Module tracker built: 0.079429s
+2020-03-07 19:07:45,340 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:07:47,902 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:07:50,782 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11519.pid`
+2020-03-07 19:07:50,783 WARNING Interrupted by user
+
+2020-03-07 19:07:50,784 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:08:40,008 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:08:40,012 DEBUG Registering process with pid 11683 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11683.pid`
+2020-03-07 19:08:40,104 PERFORMANCE Module tracker built: 0.076057s
+2020-03-07 19:08:40,204 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:08:42,842 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:08:58,130 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:08:58,131 PERFORMANCE Sources parsed: 18.020884s
+2020-03-07 19:08:58,232 INFO Building type environment...
+2020-03-07 19:09:00,358 INFO Updating is from empty stub result Environment
+2020-03-07 19:09:00,358 INFO Updating Alias Environment
+2020-03-07 19:09:00,359 INFO Updating Edges Environment
+2020-03-07 19:09:00,359 INFO Updating Undecorated functions Environment
+2020-03-07 19:09:00,359 INFO Updating Class metadata Environment
+2020-03-07 19:09:00,360 INFO Updating parse annotation Environment
+2020-03-07 19:09:00,360 INFO Updating attributes Environment
+2020-03-07 19:09:00,361 INFO Updating Global Environment
+2020-03-07 19:09:00,461 PERFORMANCE Full environment built: 2.226837s
+2020-03-07 19:09:00,663 INFO Checking 18 functions...
+2020-03-07 19:09:00,750 INFO Processed 18 of 18 functions
+2020-03-07 19:09:00,750 PERFORMANCE Check_TypeCheck: 0.192943s
+2020-03-07 19:09:00,750 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:09:00,851 INFO Postprocessing 2533 sources...
+2020-03-07 19:09:00,946 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:09:01,004 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:09:01,095 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:09:01,180 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:09:01,281 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:09:01,458 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:09:01,601 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:09:01,709 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:09:01,905 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:09:01,996 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:09:01,998 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:09:02,006 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11683.pid`
+2020-03-07 19:09:02,040 PERFORMANCE Check: 21.966219s
+2020-03-07 19:09:02,041 ERROR Found 2 type errors!
+
+2020-03-07 19:09:29,077 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:09:29,081 DEBUG Registering process with pid 11795 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11795.pid`
+2020-03-07 19:09:29,175 PERFORMANCE Module tracker built: 0.075464s
+2020-03-07 19:09:29,276 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:09:31,305 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11795.pid`
+2020-03-07 19:09:31,306 WARNING Interrupted by user
+
+2020-03-07 19:09:31,307 DEBUG Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/pyre.py", line 95, in main
+    exit_code = command.run().exit_code()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 507, in run
+    self._run()
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/check.py", line 83, in _run
+    result = self._call_client(command="check")
+  File "/home/user/.local/lib/python3.7/site-packages/pyre_check/client/commands/command.py", line 639, in _call_client
+    process.wait()
+  File "/usr/lib64/python3.7/subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib64/python3.7/subprocess.py", line 1653, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib64/python3.7/subprocess.py", line 1611, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+
+2020-03-07 19:09:34,799 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:09:34,803 DEBUG Registering process with pid 11818 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11818.pid`
+2020-03-07 19:09:34,905 PERFORMANCE Module tracker built: 0.083857s
+2020-03-07 19:09:35,006 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:09:37,557 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:09:53,896 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:09:53,896 PERFORMANCE Sources parsed: 18.993707s
+2020-03-07 19:09:53,996 INFO Building type environment...
+2020-03-07 19:09:55,879 INFO Updating is from empty stub result Environment
+2020-03-07 19:09:55,880 INFO Updating Alias Environment
+2020-03-07 19:09:55,880 INFO Updating Edges Environment
+2020-03-07 19:09:55,880 INFO Updating Undecorated functions Environment
+2020-03-07 19:09:55,883 INFO Updating Class metadata Environment
+2020-03-07 19:09:55,886 INFO Updating parse annotation Environment
+2020-03-07 19:09:55,892 INFO Updating attributes Environment
+2020-03-07 19:09:55,893 INFO Updating Global Environment
+2020-03-07 19:09:55,994 PERFORMANCE Full environment built: 1.984971s
+2020-03-07 19:09:56,186 INFO Checking 18 functions...
+2020-03-07 19:09:56,293 INFO Processed 18 of 18 functions
+2020-03-07 19:09:56,293 PERFORMANCE Check_TypeCheck: 0.210631s
+2020-03-07 19:09:56,293 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:09:56,394 INFO Postprocessing 2533 sources...
+2020-03-07 19:09:56,482 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:09:56,538 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:09:56,626 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:09:56,711 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:09:56,812 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:09:56,987 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:09:57,126 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:09:57,232 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:09:57,309 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:09:57,413 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:09:57,419 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:09:57,432 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-11818.pid`
+2020-03-07 19:09:57,520 PERFORMANCE Check: 22.605234s
+2020-03-07 19:09:57,581 ERROR Found 2 type errors!
+
+2020-03-07 19:12:46,974 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:12:46,978 DEBUG Registering process with pid 12002 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12002.pid`
+2020-03-07 19:12:47,066 PERFORMANCE Module tracker built: 0.072587s
+2020-03-07 19:12:47,167 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:12:49,704 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:13:03,727 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:13:03,728 PERFORMANCE Sources parsed: 16.658579s
+2020-03-07 19:13:03,828 INFO Building type environment...
+2020-03-07 19:13:05,645 INFO Updating is from empty stub result Environment
+2020-03-07 19:13:05,646 INFO Updating Alias Environment
+2020-03-07 19:13:05,646 INFO Updating Edges Environment
+2020-03-07 19:13:05,646 INFO Updating Undecorated functions Environment
+2020-03-07 19:13:05,646 INFO Updating Class metadata Environment
+2020-03-07 19:13:05,647 INFO Updating parse annotation Environment
+2020-03-07 19:13:05,647 INFO Updating attributes Environment
+2020-03-07 19:13:05,647 INFO Updating Global Environment
+2020-03-07 19:13:05,758 PERFORMANCE Full environment built: 1.917428s
+2020-03-07 19:13:06,001 INFO Checking 18 functions...
+2020-03-07 19:13:06,101 INFO Processed 18 of 18 functions
+2020-03-07 19:13:06,101 PERFORMANCE Check_TypeCheck: 0.200320s
+2020-03-07 19:13:06,101 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:13:06,202 INFO Postprocessing 2533 sources...
+2020-03-07 19:13:06,293 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:13:06,348 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:13:06,427 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:13:06,509 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:13:06,610 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:13:06,774 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:13:06,909 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:13:07,021 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:13:07,091 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:13:07,178 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:13:07,180 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:13:07,189 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12002.pid`
+2020-03-07 19:13:07,221 PERFORMANCE Check: 20.186077s
+2020-03-07 19:13:07,222 ERROR Found 1 type error!
+
+2020-03-07 19:24:22,699 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:24:22,703 DEBUG Registering process with pid 12402 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12402.pid`
+2020-03-07 19:24:22,791 PERFORMANCE Module tracker built: 0.072204s
+2020-03-07 19:24:22,892 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:24:23,840 ERROR Could not parse file at 177:111-177:111
+                  logger.debug("Following link: %s belongs to a file NOT translated/downloaded from transifex", %t)
+                                                                                                                ^
+
+2020-03-07 19:24:25,395 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:24:39,474 WARNING Could not parse 2 files due to syntax errors!
+
+2020-03-07 19:24:39,474 PERFORMANCE Sources parsed: 16.681834s
+2020-03-07 19:24:39,574 INFO Building type environment...
+2020-03-07 19:24:41,549 INFO Updating is from empty stub result Environment
+2020-03-07 19:24:41,550 INFO Updating Alias Environment
+2020-03-07 19:24:41,551 INFO Updating Edges Environment
+2020-03-07 19:24:41,551 INFO Updating Undecorated functions Environment
+2020-03-07 19:24:41,552 INFO Updating Class metadata Environment
+2020-03-07 19:24:41,552 INFO Updating parse annotation Environment
+2020-03-07 19:24:41,553 INFO Updating attributes Environment
+2020-03-07 19:24:41,553 INFO Updating Global Environment
+2020-03-07 19:24:41,653 PERFORMANCE Full environment built: 2.076263s
+2020-03-07 19:24:41,861 INFO Checking 6 functions...
+2020-03-07 19:24:41,862 INFO Processed 6 of 6 functions
+2020-03-07 19:24:41,862 PERFORMANCE Check_TypeCheck: 0.066070s
+2020-03-07 19:24:41,862 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:24:41,962 INFO Postprocessing 2532 sources...
+2020-03-07 19:24:42,071 INFO Postprocessed 231 of 2532 sources
+2020-03-07 19:24:42,132 INFO Postprocessed 462 of 2532 sources
+2020-03-07 19:24:42,234 INFO Postprocessed 693 of 2532 sources
+2020-03-07 19:24:42,409 INFO Postprocessed 924 of 2532 sources
+2020-03-07 19:24:42,509 INFO Postprocessed 1155 of 2532 sources
+2020-03-07 19:24:42,676 INFO Postprocessed 1386 of 2532 sources
+2020-03-07 19:24:42,839 INFO Postprocessed 1617 of 2532 sources
+2020-03-07 19:24:43,009 INFO Postprocessed 1848 of 2532 sources
+2020-03-07 19:24:43,082 INFO Postprocessed 2079 of 2532 sources
+2020-03-07 19:24:43,165 INFO Postprocessed 2310 of 2532 sources
+2020-03-07 19:24:43,167 INFO Postprocessed 2532 of 2532 sources
+2020-03-07 19:24:43,175 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12402.pid`
+2020-03-07 19:24:43,206 PERFORMANCE Check: 20.450428s
+2020-03-07 19:24:43,206 SUCCESS No type errors found
+
+2020-03-07 19:25:36,405 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:25:36,409 DEBUG Registering process with pid 12497 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12497.pid`
+2020-03-07 19:25:36,498 PERFORMANCE Module tracker built: 0.072716s
+2020-03-07 19:25:36,600 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:25:39,167 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:25:53,292 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:25:53,292 PERFORMANCE Sources parsed: 16.794664s
+2020-03-07 19:25:53,393 INFO Building type environment...
+2020-03-07 19:25:55,159 INFO Updating is from empty stub result Environment
+2020-03-07 19:25:55,159 INFO Updating Alias Environment
+2020-03-07 19:25:55,159 INFO Updating Edges Environment
+2020-03-07 19:25:55,159 INFO Updating Undecorated functions Environment
+2020-03-07 19:25:55,160 INFO Updating Class metadata Environment
+2020-03-07 19:25:55,160 INFO Updating parse annotation Environment
+2020-03-07 19:25:55,160 INFO Updating attributes Environment
+2020-03-07 19:25:55,160 INFO Updating Global Environment
+2020-03-07 19:25:55,261 PERFORMANCE Full environment built: 1.866765s
+2020-03-07 19:25:55,436 INFO Checking 18 functions...
+2020-03-07 19:25:55,537 INFO Processed 18 of 18 functions
+2020-03-07 19:25:55,538 PERFORMANCE Check_TypeCheck: 0.201914s
+2020-03-07 19:25:55,538 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:25:55,638 INFO Postprocessing 2533 sources...
+2020-03-07 19:25:55,786 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:25:55,841 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:25:55,922 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:25:56,005 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:25:56,106 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:25:56,270 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:25:56,402 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:25:56,504 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:25:56,571 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:25:56,658 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:25:56,661 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:25:56,670 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12497.pid`
+2020-03-07 19:25:56,702 PERFORMANCE Check: 20.238545s
+2020-03-07 19:25:56,702 SUCCESS No type errors found
+
+2020-03-07 19:26:16,543 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:26:16,547 DEBUG Registering process with pid 12601 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12601.pid`
+2020-03-07 19:26:16,636 PERFORMANCE Module tracker built: 0.073613s
+2020-03-07 19:26:16,737 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:26:19,259 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:26:33,087 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:26:33,088 PERFORMANCE Sources parsed: 16.452055s
+2020-03-07 19:26:33,188 INFO Building type environment...
+2020-03-07 19:26:34,936 INFO Updating is from empty stub result Environment
+2020-03-07 19:26:34,936 INFO Updating Alias Environment
+2020-03-07 19:26:34,937 INFO Updating Edges Environment
+2020-03-07 19:26:34,937 INFO Updating Undecorated functions Environment
+2020-03-07 19:26:34,937 INFO Updating Class metadata Environment
+2020-03-07 19:26:34,938 INFO Updating parse annotation Environment
+2020-03-07 19:26:34,938 INFO Updating attributes Environment
+2020-03-07 19:26:34,938 INFO Updating Global Environment
+2020-03-07 19:26:35,039 PERFORMANCE Full environment built: 1.842248s
+2020-03-07 19:26:35,260 INFO Checking 18 functions...
+2020-03-07 19:26:35,361 INFO Processed 18 of 18 functions
+2020-03-07 19:26:35,361 PERFORMANCE Check_TypeCheck: 0.203036s
+2020-03-07 19:26:35,362 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:26:35,462 INFO Postprocessing 2533 sources...
+2020-03-07 19:26:35,562 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:26:35,616 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:26:35,695 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:26:35,777 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:26:35,878 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:26:36,041 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:26:36,180 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:26:36,284 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:26:36,356 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:26:36,447 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:26:36,449 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:26:36,456 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12601.pid`
+2020-03-07 19:26:36,491 PERFORMANCE Check: 19.888070s
+2020-03-07 19:26:36,491 SUCCESS No type errors found
+
+2020-03-07 19:27:05,577 DEBUG Running `/home/user/.local/bin/pyre.bin check -logging-sections parser -project-root /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -log-directory /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -filter-directories /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils -workers 1 -ignore-all-errors /home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre -search-path /home/user/.local/lib/python3.7/site-packages,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/user/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/user/.local/lib/pyre_check/typeshed/stdlib/3,/home/user/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/user/.local/lib/pyre_check/typeshed/third_party/3,/home/user/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-03-07 19:27:05,581 DEBUG Registering process with pid 12687 in pid file `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12687.pid`
+2020-03-07 19:27:05,670 PERFORMANCE Module tracker built: 0.072850s
+2020-03-07 19:27:05,775 INFO Parsing 2534 stubs and sources...
+2020-03-07 19:27:08,277 ERROR Could not parse file at 71:8-71:8
+      else:
+         ^
+
+2020-03-07 19:27:22,004 WARNING Could not parse 1 file due to syntax errors!
+
+2020-03-07 19:27:22,004 PERFORMANCE Sources parsed: 16.334786s
+2020-03-07 19:27:22,105 INFO Building type environment...
+2020-03-07 19:27:23,970 INFO Updating is from empty stub result Environment
+2020-03-07 19:27:23,970 INFO Updating Alias Environment
+2020-03-07 19:27:23,970 INFO Updating Edges Environment
+2020-03-07 19:27:23,971 INFO Updating Undecorated functions Environment
+2020-03-07 19:27:23,971 INFO Updating Class metadata Environment
+2020-03-07 19:27:23,971 INFO Updating parse annotation Environment
+2020-03-07 19:27:23,972 INFO Updating attributes Environment
+2020-03-07 19:27:23,972 INFO Updating Global Environment
+2020-03-07 19:27:24,072 PERFORMANCE Full environment built: 1.966184s
+2020-03-07 19:27:24,325 INFO Checking 18 functions...
+2020-03-07 19:27:24,423 INFO Processed 18 of 18 functions
+2020-03-07 19:27:24,423 PERFORMANCE Check_TypeCheck: 0.198391s
+2020-03-07 19:27:24,423 MEMORY Shared memory size post-typecheck (size: 76)
+2020-03-07 19:27:24,524 INFO Postprocessing 2533 sources...
+2020-03-07 19:27:24,621 INFO Postprocessed 231 of 2533 sources
+2020-03-07 19:27:24,675 INFO Postprocessed 462 of 2533 sources
+2020-03-07 19:27:24,756 INFO Postprocessed 693 of 2533 sources
+2020-03-07 19:27:24,842 INFO Postprocessed 924 of 2533 sources
+2020-03-07 19:27:24,943 INFO Postprocessed 1155 of 2533 sources
+2020-03-07 19:27:25,117 INFO Postprocessed 1386 of 2533 sources
+2020-03-07 19:27:25,265 INFO Postprocessed 1617 of 2533 sources
+2020-03-07 19:27:25,372 INFO Postprocessed 1848 of 2533 sources
+2020-03-07 19:27:25,444 INFO Postprocessed 2079 of 2533 sources
+2020-03-07 19:27:25,531 INFO Postprocessed 2310 of 2533 sources
+2020-03-07 19:27:25,535 INFO Postprocessed 2533 of 2533 sources
+2020-03-07 19:27:25,544 DEBUG Removing pid file: `/home/user/translation/website/dysfuncia/translation-fixes/qubesos.github.io/_utils/_translation_utils/.pyre/pid_files/check-12687.pid`
+2020-03-07 19:27:25,578 PERFORMANCE Check: 19.941951s
+2020-03-07 19:27:25,580 SUCCESS No type errors found
+
